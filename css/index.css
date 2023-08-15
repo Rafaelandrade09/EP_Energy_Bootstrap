@@ -4,6 +4,13 @@
     background-color: #E7E7E7;
 }
 
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 18px;
+}
+
 
 /* MENU */
 #logoMenu{
@@ -36,13 +43,183 @@
     margin-left: 5%;
     background-color: white;
     height: 100%;
+    box-shadow: 1px 2px 4px gray;
 }
+
 
 
 /* CARROSSEL */
 .carrosselFormater{
     width: 100%;
-  height: 100%;
-  object-fit: cover;
+    height: 100%;
+    object-fit: cover;
 }
 
+
+
+
+/* VANTAGENS */
+.areaVantagens {
+    background-color: rgba(238, 238, 238, 0.75);
+    width: 80%;
+    margin: 0 auto;
+    height: 700px;
+    position: relative;
+    margin-top: -70px;
+    border-radius: 10px;
+    text-align: left; /* Alinha os outros elementos à direita */
+    box-shadow: 0px 2px 5px gray;
+}
+
+.areaVantagens h1 {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 0; /* Remove margens padrão para maior precisão */
+}
+
+.paragrafoFormater{
+    display: block;
+}
+
+/* Estilos responsivos */
+@media (max-width: 300px) {
+    .areaVantagens {
+        height: auto; /* Ajusta a altura automaticamente em dispositivos menores */
+    }
+    
+    .areaVantagens h1 {
+        position: static; /* Remove o posicionamento absoluto em dispositivos menores */
+        text-align: center; /* Centraliza o h1 em dispositivos menores */
+        margin-top: 20px; /* Adapta a margem superior */
+
+    }
+
+    .imageQualidade {
+        position: static; /* Remove o posicionamento absoluto em dispositivos menores */
+        text-align: center; /* Centraliza o h1 e a imagem em dispositivos menores */
+        margin-top: 20px; /* Adapta a margem superior para h1 */
+
+    }
+}
+
+
+.reguaLateral{
+    background-color: #4E962C;
+    width: 5px;
+    position: absolute;
+    height: 75%;
+    top: 140px;
+    left: 6%;
+    border-radius: 5px;
+}
+
+.qualidadeH2 {
+    top: 180px;
+    left: 20%;
+    position: absolute;
+    margin: 0; /* Remove margens padrão para maior precisão */
+}
+
+.textoQualidade {
+    top: 200px;
+    left: 20%;
+    position: absolute;
+    width: 75%;
+}
+
+
+.imageQualidade{
+    height: 70px;
+    top: 200px;
+    left: 10%; /* Posiciona a imagem no lado direito */
+    position: absolute;
+}
+
+.eficienciaH2 {
+    top: 340px;
+    left: 20%;
+    position: absolute;
+    margin: 0; /* Remove margens padrão para maior precisão */
+}
+
+.textoEficiencia {
+    top: 360px;
+    left: 20%;
+    position: absolute;
+    width: 70%;
+}
+
+.imageEficiencia{
+    height: 95px;
+    top: 350px;
+    left: 10%; /* Posiciona a imagem no lado direito */
+    position: absolute;
+}
+
+
+.confiabilidadeH2 {
+    top: 500px;
+    left: 20%;
+    position: absolute;
+    margin: 0; /* Remove margens padrão para maior precisão */
+}
+
+.textoConfiabilidade {
+    top: 520px;
+    left: 20%;
+    position: absolute;
+    width: 70%;
+}
+
+.imageConfiabilidade{
+    height: 95px;
+    top: 540px;
+    left: 9%; /* Posiciona a imagem no lado direito */
+    position: absolute;
+}
+
+
+/* Estilos responsivos */
+@media (max-width: 550px) {
+    .areaVantagens {
+        flex-direction: column; /* Empilhar elementos verticalmente em dispositivos menores */
+        align-items: flex-start; /* Alinhar elementos à esquerda em dispositivos menores */
+    }
+
+    .imageQualidade {
+        display: inline-block; /* Mostra a imagem em dispositivos menores */
+        top: 110%; /* Adapta a margem superior */
+        left: 40%;
+    }
+}
+
+
+
+
+/* NOSSAS SOLUCOES*/
+.solucoesH1{
+
+    margin-top: 80px;
+    margin-left: 40%;
+}
+
+
+
+
+/* PARALAX */
+
+.paralax{
+    width: 100%;
+    height: 500px;
+    margin-top: 90px;
+    background: rgba(0, 0, 0, 0.1)
+    url(../banners/banner_1.png) center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-blend-mode: darken;
+    background-position: center;
+    box-shadow: 0px 0px 4px gray;
+}
