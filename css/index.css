@@ -60,7 +60,7 @@ h2{
 
 /* VANTAGENS */
 .areaVantagens {
-    background-color: rgba(238, 238, 238, 0.75);
+    background-color: rgba(240, 237, 237, 0.75);
     width: 80%;
     margin: 0 auto;
     height: 700px;
@@ -199,21 +199,112 @@ h2{
 
 
 /* NOSSAS SOLUCOES*/
-.solucoesH1{
+.container-solucoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.solucoesH1 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+}
 
-    margin-top: 80px;
-    margin-left: 40%;
+/* CARROSSEL PRODUTOS*/
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    top: 100px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 760px) {
+    .swiper-button-next {
+      right: 20px;
+      transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+      left: 20px;
+      transform: rotate(90deg);
+    }
+  }
+
+
+  /* PRODUTOS */
+  .prod-painel-eletrico-img {
+    background: url(../imagens/de-forca-5a7da16198b76.png) center;
+    height: 300px;
+    width: 200px;
+    background-position: center;
+    margin: auto;
+  
+  }
+  
+  .prod-painel-eletrico-desc {
+    background-color: #0a1625;
+    width: 80%;
+    margin: auto;
+    
+  }
+  
+  .prod-painel-eletrico-img-2 {
+    background: url(../imagens/de-forca-5a7da16198b76.png) center;
+    height: 300px;
+    width: 200px;
+    margin: auto;
+  }
+  
+  .prod-painel-eletrico-desc-2 {
+    background-color: #0a1625;
+    width: 80%;
+    margin: auto;
+  }
+  
+
+
+  .prod-painel-eletrico-img-3 {
+    background: url(../imagens/de-forca-5a7da16198b76.png) center;
+    height: 300px;
+    width: 200px;
+    margin: auto;
+
+  }
+  
+  .prod-painel-eletrico-desc-3 {
+    background-color: #0a1625;
+    width: 80%;
+    margin: auto;
+  }
+  
+    .prod-painel-eletrico-desc p,
+    .prod-painel-eletrico-desc-2 p,
+    .prod-painel-eletrico-desc-3 p {
+    margin: 0;
+    padding: 10px;
+    color: white;
+}
+  
+    .prod-painel-eletrico-desc:hover,
+    .prod-painel-eletrico-desc-2:hover,
+    .prod-painel-eletrico-desc-3:hover {
+    background-color: #83BF00;
+    cursor: pointer;
 }
 
 
-
-
 /* PARALAX */
-
 .paralax{
     width: 100%;
     height: 500px;
-    margin-top: 90px;
+    margin-top: 200px;
     background: rgba(0, 0, 0, 0.1)
     url(../banners/banner_1.png) center;
     background-size: cover;
@@ -222,4 +313,65 @@ h2{
     background-blend-mode: darken;
     background-position: center;
     box-shadow: 0px 0px 4px gray;
+}
+
+
+.text-paralax{  
+        width: 80%;
+        margin: 0 auto;
+        height: 200px;
+        position: relative;
+        margin-top: 20px;
+        border-radius: 10px;
+        text-align: left; /* Alinha os outros elementos à direita */
+
+}
+
+.text-paralax p{  
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin: 0; /* Remove margens padrão para maior precisão */
+    width: 90%;
+
+}
+
+
+
+/* AREA VIDEO */
+
+.container-saibaMais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-saibaMais h1 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-bottom: 50px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espaço entre as colunas */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.video-container {
+    width: 100%; /* Ocupa 100% da coluna */
+    max-width: 100%;
+    overflow: hidden; /* Evita que o vídeo ultrapasse a div */
+    box-shadow: 2px 2px 3px gray;
+}
+
+video {
+    width: 100%; /* Ocupa todo o espaço disponível */
+    display: block;
+    
+}
+
+.text-container {
+    padding: 20px;
 }
