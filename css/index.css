@@ -12,29 +12,50 @@ h2{
 }
 
 
-/* MENU */
-#logoMenu{
-    width: 200px;
-    height: 100px;
-    border: 1px solid red;
-}
+/* MENU NAVEGAÇÃO*/
 
-.NavBarFormater{
+.navbar {
     background-color: #0a1625;
-    height: 60px;
 }
 
-.linkFormater{
-    display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  color: white;
+
+
+.navbar-brand {
+    color: white;
+    margin-left: 4.5%;
+    max-width: 100%; /*Para garantir que o logotipo não exceda o tamanho do contêiner */
+    height: 100%;    /*Para manter a proporção do logotipo */
+    display: block;
+    padding: 0px;    /*Para remover qualquer espaço extra abaixo do logotipo*/
+   
 }
 
-.linkFormater:hover{
+#navbarNav {
+    margin-right: 5%;
+    width: 70%;
+}
+
+.navbar-nav {
+    justify-content: right;
+    width: 70%;
+}
+
+.nav-link {
+    color: white;
+    padding: 0px;
+    margin-left: 10px;
+    
+}
+
+.nav-link:hover {
     color: rgb(157, 158, 158);
     transition: 0.1s;
 }
+
+.navbar-toggler {
+    color:white;
+}
+
 
 
 /* CORPO PRINCIPAL */
@@ -45,6 +66,15 @@ h2{
     height: 100%;
     box-shadow: 1px 2px 4px gray;
 }
+
+/* Media Query para telas maiores que 1080px */
+@media screen and (min-width: 1700px) {
+    .containerPrincipal {
+        width: 70%;
+        margin-left: 15%; /* (100% - 70%) / 2 para centralizar */
+    }
+}
+
 
 
 
@@ -58,25 +88,24 @@ h2{
 
 
 
-/* VANTAGENS */
-.areaVantagens {
-    background-color: rgba(240, 237, 237, 0.75);
-    width: 80%;
-    margin: 0 auto;
-    height: 700px;
-    position: relative;
-    margin-top: -70px;
-    border-radius: 10px;
-    text-align: left; /* Alinha os outros elementos à direita */
-    box-shadow: 0px 2px 5px gray;
+/* VANTAGENS - DIFERENCIAIS */
+
+.container-nossos-diferenciais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
 }
 
-.areaVantagens h1 {
-    top: 80px;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    margin: 0; /* Remove margens padrão para maior precisão */
+.areaVantagens {
+    width: 70%;
+    margin: 0 auto;
+    height: 580px;
+    position: relative;
+    margin-top: 20px;
+    border-radius: 10px;
+    text-align: left; /* Alinha os outros elementos à direita */
 }
 
 .paragrafoFormater{
@@ -109,74 +138,77 @@ h2{
     background-color: #4E962C;
     width: 5px;
     position: absolute;
-    height: 75%;
-    top: 140px;
-    left: 6%;
+    height: 80%;
+    top: 50px;
+    left: 9%;
     border-radius: 5px;
 }
 
 .qualidadeH2 {
-    top: 180px;
+    top: 50px;
     left: 20%;
     position: absolute;
     margin: 0; /* Remove margens padrão para maior precisão */
 }
 
 .textoQualidade {
-    top: 200px;
+    top: 70px;
     left: 20%;
     position: absolute;
     width: 75%;
+    text-align: justify;
 }
 
 
 .imageQualidade{
-    height: 70px;
-    top: 200px;
-    left: 10%; /* Posiciona a imagem no lado direito */
+    height: 55px;
+    top: 80px;
+    left: 13%; /* Posiciona a imagem no lado direito */
     position: absolute;
 }
 
 .eficienciaH2 {
-    top: 340px;
+    top: 210px;
     left: 20%;
     position: absolute;
     margin: 0; /* Remove margens padrão para maior precisão */
 }
 
 .textoEficiencia {
-    top: 360px;
+    top: 230px;
     left: 20%;
     position: absolute;
-    width: 70%;
+    width: 75%;
+    text-align: justify;
 }
 
 .imageEficiencia{
-    height: 95px;
-    top: 350px;
-    left: 10%; /* Posiciona a imagem no lado direito */
+    height: 70px;
+    top: 240px;
+    left: 13%; /* Posiciona a imagem no lado direito */
     position: absolute;
 }
 
 
 .confiabilidadeH2 {
-    top: 500px;
+    top: 370px;
     left: 20%;
     position: absolute;
     margin: 0; /* Remove margens padrão para maior precisão */
 }
 
 .textoConfiabilidade {
-    top: 520px;
+    top: 390px;
     left: 20%;
     position: absolute;
-    width: 70%;
+    width: 75%;
+    text-align: justify;
 }
 
 .imageConfiabilidade{
-    height: 95px;
-    top: 540px;
-    left: 9%; /* Posiciona a imagem no lado direito */
+    height: 70px;
+    top: 420px;
+    left: 11%; /* Posiciona a imagem no lado direito */
     position: absolute;
 }
 
@@ -203,6 +235,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
 }
 .solucoesH1 {
     text-align: center; /* Centraliza o texto horizontalmente */
@@ -213,7 +246,7 @@ h2{
 .swiper {
     width: 100%;
     height: 100%;
-    top: 100px;
+    top: 70px;
   }
 
   .swiper-slide {
@@ -303,10 +336,10 @@ h2{
 /* PARALAX */
 .paralax{
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin-top: 200px;
     background: rgba(0, 0, 0, 0.1)
-    url(../banners/banner_1.png) center;
+    url(../banners/banner_paralax.png) center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -343,11 +376,13 @@ h2{
 
 .container-saibaMais {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: start;
+    width: 92%;
+    margin: 0 auto; /* Define margens automáticas no eixo horizontal */
 }
 .container-saibaMais h1 {
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: left; /* Centraliza o texto horizontalmente */
     margin-bottom: 50px;
 }
 
@@ -374,4 +409,65 @@ video {
 
 .text-container {
     padding: 20px;
+    text-align: justify;
+    width: 90%;
+}
+
+
+
+.banner-final{
+ margin-top: 60px;
+}
+
+.banner-final img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.footer {
+    background-color: #0a1625;
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0px -4px 8px black;
+}
+
+.container {
+    max-width: 1200px; /* Ajuste o valor conforme necessário */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    margin: 0;
+    justify-content: flex-end; /* Alinha toda a lista à direita */
+}
+
+.linkFormater {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 250px; /* Ajusta a largura máxima */
+    margin-top: -50px;
+}
+
+
+.div-footer-final{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.div-footer-final p{
+    font-size: 10px;
+    margin-top: 2px;
 }
