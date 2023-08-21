@@ -90,143 +90,64 @@ h2{
 
 /* VANTAGENS - DIFERENCIAIS */
 
-.container-nossos-diferenciais{
+.container-diferenciais{
+    background-color: #092d53;
+    width: 100%;
+    height: 350px;
+    margin-top: 2px;
+}
+
+.titulo-diferenciais {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+  }
+
+  .titulo-diferenciais h1 {
+    margin: 0;
     margin-top: 40px;
-}
+    color: #ffffff;
+  }
 
-.areaVantagens {
-    width: 70%;
-    margin: 0 auto;
-    height: 580px;
-    position: relative;
-    margin-top: 20px;
-    border-radius: 10px;
-    text-align: left; /* Alinha os outros elementos à direita */
-}
+.container-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 
-.paragrafoFormater{
-    display: block;
-}
+  .container-card > div {
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px rgba(34, 34, 34, 0.459);
+    width: 360px;
+    height: 420px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+  }
 
-/* Estilos responsivos */
-@media (max-width: 300px) {
-    .areaVantagens {
-        height: auto; /* Ajusta a altura automaticamente em dispositivos menores */
-    }
-    
-    .areaVantagens h1 {
-        position: static; /* Remove o posicionamento absoluto em dispositivos menores */
-        text-align: center; /* Centraliza o h1 em dispositivos menores */
-        margin-top: 20px; /* Adapta a margem superior */
+  .container-card h2 {
+    color: #082f5f;
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
 
-    }
-
-    .imageQualidade {
-        position: static; /* Remove o posicionamento absoluto em dispositivos menores */
-        text-align: center; /* Centraliza o h1 e a imagem em dispositivos menores */
-        margin-top: 20px; /* Adapta a margem superior para h1 */
-
-    }
-}
-
-
-.reguaLateral{
-    background-color: #4E962C;
-    width: 5px;
-    position: absolute;
-    height: 80%;
-    top: 50px;
-    left: 9%;
-    border-radius: 5px;
-}
-
-.qualidadeH2 {
-    top: 50px;
-    left: 20%;
-    position: absolute;
-    margin: 0; /* Remove margens padrão para maior precisão */
-}
-
-.textoQualidade {
-    top: 70px;
-    left: 20%;
-    position: absolute;
-    width: 75%;
+  .container-card p {
+    color: #2c2c2c;
     text-align: justify;
-}
+    padding: 9px;
+  }
 
-
-.imageQualidade{
-    height: 55px;
-    top: 80px;
-    left: 13%; /* Posiciona a imagem no lado direito */
-    position: absolute;
-}
-
-.eficienciaH2 {
-    top: 210px;
-    left: 20%;
-    position: absolute;
-    margin: 0; /* Remove margens padrão para maior precisão */
-}
-
-.textoEficiencia {
-    top: 230px;
-    left: 20%;
-    position: absolute;
-    width: 75%;
-    text-align: justify;
-}
-
-.imageEficiencia{
-    height: 70px;
-    top: 240px;
-    left: 13%; /* Posiciona a imagem no lado direito */
-    position: absolute;
-}
-
-
-.confiabilidadeH2 {
-    top: 370px;
-    left: 20%;
-    position: absolute;
-    margin: 0; /* Remove margens padrão para maior precisão */
-}
-
-.textoConfiabilidade {
-    top: 390px;
-    left: 20%;
-    position: absolute;
-    width: 75%;
-    text-align: justify;
-}
-
-.imageConfiabilidade{
-    height: 70px;
-    top: 420px;
-    left: 11%; /* Posiciona a imagem no lado direito */
-    position: absolute;
-}
-
-
-/* Estilos responsivos */
-@media (max-width: 550px) {
-    .areaVantagens {
-        flex-direction: column; /* Empilhar elementos verticalmente em dispositivos menores */
-        align-items: flex-start; /* Alinhar elementos à esquerda em dispositivos menores */
-    }
-
-    .imageQualidade {
-        display: inline-block; /* Mostra a imagem em dispositivos menores */
-        top: 110%; /* Adapta a margem superior */
-        left: 40%;
-    }
-}
-
+  .container-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+  }
 
 
 
@@ -235,7 +156,7 @@ h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 230px;
 }
 .solucoesH1 {
     text-align: center; /* Centraliza o texto horizontalmente */
@@ -246,7 +167,7 @@ h2{
 .swiper {
     width: 100%;
     height: 100%;
-    top: 70px;
+    top: 180px;
   }
 
   .swiper-slide {
