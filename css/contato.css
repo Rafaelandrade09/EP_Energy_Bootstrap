@@ -1,24 +1,30 @@
 /* PAGINA CONTATO */
 
-
-.body form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.body{
     margin: 0;
-    background-color: #f4f4f4;
+    padding: 0;
+     background-color: #F3F2F0; 
 }
 
 
-
-.containerPrincipal2 {
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-principal{
+    width: 100%;
+    margin-left: 5%;
+    background-color: white;
     height: 100%;
+    box-shadow: 1px 2px 4px gray;
 }
+
+/* Media Query para telas maiores que 1080px */
+@media screen and (min-width: 1700px) {
+    .container-principal {
+        width: 70%;
+        margin-left: 15%; /* (100% - 70%) / 2 para centralizar */
+    }
+}
+
+
+
 
 .containerForm {
    
@@ -26,18 +32,17 @@
     max-width: 60%;
     padding: 20px;
     text-align: center;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
 
 .contact-form {
     
-    background-color: #e6e5e5;
+    background-color: #F3F2F0;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 2px gray;
 }
 
 .form-group {
@@ -58,6 +63,7 @@
     background-size: cover;
     background-position: center;
     margin-bottom: 15px;
+    margin-top: -20px;
 }
 
 
@@ -72,14 +78,17 @@
 }
 
 .text-form {
-    background: #0a1625;
+    background: #254c79;
     color: white;
     text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 8px;
    
 }
 
 .btn-primary {
-    background-color: #0a1625;
+    background-color: #254c79;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -89,5 +98,53 @@
 }
 
 .btn-primary:hover {
-    background-color: #2e4a69;
+    background-color: #3f82cf;
+}
+
+
+.footer {
+    background-color: #0a1625;
+    color: white;
+    padding: 20px 0;
+    margin-top: 60px;
+    box-shadow: none;
+}
+
+.container {
+    max-width: 1200px; /* Ajuste o valor conforme necessário */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    margin: 0;
+    justify-content: flex-end; /* Alinha toda a lista à direita */
+}
+
+.linkFormater {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 250px; /* Ajusta a largura máxima */
+    margin-top: -50px;
+}
+
+
+.div-footer-final{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.div-footer-final p{
+    font-size: 10px;
+    margin-top: 2px;
 }
