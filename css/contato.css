@@ -1,0 +1,93 @@
+/* PAGINA CONTATO */
+
+
+.body form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.containerPrincipal2 {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.containerForm {
+   
+    width: 100%;
+    max-width: 60%;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.contact-form {
+    
+    background-color: #e6e5e5;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cfcece;
+    border-radius: 4px;
+    outline: none;
+}
+
+.imgcontato {
+    height: 300px;
+    background: url(../imagens/contato.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+
+.containerForm p i {
+    margin-right: 10px;
+}
+
+
+.infodanilo {
+
+    margin-bottom: 40px;
+}
+
+.text-form {
+    background: #0a1625;
+    color: white;
+    text-align: center;
+   
+}
+
+.btn-primary {
+    background-color: #0a1625;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #2e4a69;
+}
