@@ -4,6 +4,11 @@
     margin: 0;
     padding: 0;
      background-color: #F3F2F0; 
+
+     -webkit-user-select: none; /* Safari */
+     -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* IE/Edge */
+     user-select: none; /* Padrão */
 }
 
 @font-face {
