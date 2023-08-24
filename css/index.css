@@ -16,6 +16,11 @@
   src: url("/fonts/Inter-Regular.woff");
 }
 
+@font-face {
+  font-family: "Cinzel-Regular.woff";
+  src: url("/fonts/Cinzel-Regular.woff");
+}
+
 h1{
     font-size: 30px;
     font-family: "Montserrat-Regular";
@@ -157,10 +162,12 @@ p{
 /* VANTAGENS - DIFERENCIAIS */
 
 .container-diferenciais{
-    background-color: #F3F2F0;
-    width: 100%;
-    height: 400px;
-    margin-top: 0px;
+  position: relative;
+  z-index: 2; /* Coloca a seção de diferenciais sobre o banner */
+  background-color: #ffffff;
+  width: 100%;
+  height: 400px;
+  margin-top: 0px;
 }
 
 .titulo-diferenciais {
@@ -187,8 +194,8 @@ p{
 
   .container-card > div {
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0px 1px 2px rgba(34, 34, 34, 0.459);
+    background-color: #081d38;
+    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.726);
     width: 360px;
     height: 420px;
     padding: 20px;
@@ -197,6 +204,11 @@ p{
     justify-content: center;
     align-items: center;
     border-radius: 13px;
+    color: #ffffff;
+  }
+  .container-card div:hover{
+    transform: scale(1.03);
+    transition: all .5s ease-in;
   }
 
   .container-card h2 {
@@ -206,137 +218,80 @@ p{
   }
 
   .container-card p {
-    color: #2c2c2c;
+    color: #e9e9e9;
     text-align: center;
     padding: 9px;
   }
 
   .container-card img {
-    max-width: 100px;
+    max-width: 70px;
     margin-bottom: 15px;
   }
 
 
-
-
-
 /* NOSSAS SOLUCOES*/
-.container-solucoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner-solucoes{
+  height: 850px;
+  width: 100%;
+  margin-top: 0px;
+  z-index: 1;
+  
+  box-shadow: 0px 0px 4px gray;
+}
+.banner-solucoes img{
+  width: 100%;
+  height: 100%;
+  
+  box-shadow: 0px 0px 4px gray;
+}
+
+
+.container-botao-solucoes{
     margin-top: 40px;
-}
-.solucoesH1 {
-    text-align: center; /* Centraliza o texto horizontalmente */
-}
-
-/* CARROSSEL PRODUTOS*/
-
-.swiper {
-    width: 90%;
-    height: 80%;
-    top: 80px;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  @media (max-width: 760px) {
-    .swiper-button-next {
-      right: 20px;
-      transform: rotate(90deg);
-    }
-
-    .swiper-button-prev {
-      left: 20px;
-      transform: rotate(90deg);
-    }
-  }
-
-
-  /* PRODUTOS */
-  .prod-painel-eletrico-img {
-    background: url(../imagens/de-forca-5a7da16198b76.png) center;
-    height: 300px;
-    width: 200px;
-    background-position: center;
-    margin: auto;
-  
-  }
-  
-  .prod-painel-eletrico-desc {
-    background-color: #0a1625;
-    width: 80%;
-    margin: auto;
-    
-  }
-  
-  .prod-painel-eletrico-img-2 {
-    background: url(../imagens/de-forca-5a7da16198b76.png) center;
-    height: 300px;
-    width: 200px;
-    margin: auto;
-  }
-  
-  .prod-painel-eletrico-desc-2 {
-    background-color: #0a1625;
-    width: 80%;
-    margin: auto;
-  }
-  
-
-
-  .prod-painel-eletrico-img-3 {
-    background: url(../imagens/de-forca-5a7da16198b76.png) center;
-    height: 300px;
-    width: 200px;
-    margin: auto;
-
-  }
-  
-  .prod-painel-eletrico-desc-3 {
-    background-color: #0a1625;
-    width: 80%;
-    margin: auto;
-  }
-  
-    .prod-painel-eletrico-desc h4,
-    .prod-painel-eletrico-desc-2 h4,
-    .prod-painel-eletrico-desc-3 h4 {
-    margin: 0;
-    padding: 10px;
-    color: white;
-}
-  
-    .prod-painel-eletrico-desc:hover,
-    .prod-painel-eletrico-desc-2:hover,
-    .prod-painel-eletrico-desc-3:hover {
-    background-color: #a1a1a1;
-    cursor: pointer;
-}
-
-
-/* PARALAX */
-.paralax{
     width: 100%;
-    height: 600px;
-    margin-top: 200px;
-    background: rgba(0, 0, 0, 0.1)
-    url(../banners/banner_paralax.png) center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    background-blend-mode: darken;
-    background-position: center;
-    box-shadow: 0px 0px 4px gray;
+
 }
+.botao-solucoes{
+  border: 1px solid rgb(184, 184, 184);
+  padding: 10px;
+  border-radius: 50px;
+  width: 30%;
+  text-decoration: none;
+}
+.botao-solucoes h1{
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(184, 184, 184);
+  font-weight:normal;
+  font-size: 22px;
+}
+.botao-solucoes:hover {
+  border: 1px solid rgb(37, 37, 37);
+  transition: 1s;
+}
+.botao-solucoes:hover h1 {
+  color: rgb(37, 37, 37); /* Aplica a cor diretamente ao h1 ao passar o mouse sobre o botão */
+  transition: 1s;
+}
+
+.container-texto-soluçoes{
+  margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-texto-soluçoes p{
+  font-size: 20px;
+  color: rgb(151, 151, 151);
+  font-weight: lighter;
+  width: 60%;
+  text-align: center;
+  font-family:"Cinzel-Regular.woff";
+}
+
 
 
 
@@ -349,7 +304,7 @@ p{
     align-items: center;
     width: 95%;
     margin: 0 auto; /* Define margens automáticas no eixo horizontal */
-    margin-top: 30px;
+    margin-top: -40px;
 }
 @media (min-width: 1700px) {
   .container-saibaMais {
@@ -372,7 +327,7 @@ p{
 }
 
 .video-container {
-    width: 100%; /* Ocupa 100% da coluna */
+    width: 150%; /* Ocupa 100% da coluna */
     max-width: 100%;
     overflow: hidden; /* Evita que o vídeo ultrapasse a div */
     box-shadow: 2px 2px 3px gray;
@@ -397,10 +352,12 @@ video {
 
 .text-container {
     padding: 20px;
-    text-align: justify;
-    width: 90%;
-    background-color: #F3F2F0;
-    border-radius: 12px;
+    text-align: start;
+    width: 100%;
+
+}
+.text-container p{
+  
 }
 
 

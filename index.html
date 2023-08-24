@@ -9,8 +9,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
     <title>EP-Energy</title>
 </head>
@@ -63,7 +61,7 @@
 
     <div class="containerPrincipal"> 
         
-        <!-- CAROUSEL -->
+        <!-- BANNER -->
 
         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -112,7 +110,7 @@
 
           <div class="container-card">
             <div>
-              <img src="icons/qualidade.png" alt="" style="margin-top: -38px;">
+              <img src="icons/icone-ok.png" alt="" style="margin-top: -38px;">
               <div>
                 <h3>QUALIDADE EM PRODUTOS</h3>
                 <hr>
@@ -124,7 +122,7 @@
             </div>
           
             <div>
-              <img src="icons/atendimento.png" alt="" style="margin-top: 10px;">
+              <img src="icons/icone-ok.png" alt="">
               <div>
                 <h3>SERVIÇOS E ATENDIMENTO</h3>
                 <hr>
@@ -136,7 +134,7 @@
             </div>
           
             <div>
-              <img src="icons/confiança.png" alt="" style="margin-top: -1px;">
+              <img src="icons/icone-ok.png" alt="">
               <div>
                 <h3>CONFIANÇA</h3>
                 <hr>
@@ -150,92 +148,29 @@
             </div>
           </div>
            </div>
-          
+        
 
-
-           <!-- CARROSSEL DE PRODUTOS -->
-
-           <div>
-
-            <hr style="margin-top: 200px;">
-            <div class="container-solucoes">
-              <h1 class="solucoesH1">CONHEÇA NOSSAS SOLUÇÕES</h1>
+            <!-- BANNER IMG -->
+            
+            <div class="banner-solucoes">
+              <img src="banners/banner-solucoes.png" alt="">
             </div>
-             
 
-               <!-- Swiper -->
-                <div class="swiper prod">
-                  <div class="swiper-wrapper">
+            <div class="container-botao-solucoes">
+                <a class="botao-solucoes" href="solucoes-transformadores.html">
+                  <h1>NOSSAS SOLUÇÕES</h1>
+                </a>
+            </div>
 
-                    <div class="swiper-slide">
-                        <div class="prod-painel-eletrico-img"></div>
-                        <div class="prod-painel-eletrico-desc">
-                          <h4>Transformador - TZW x800</h4>
-                        </div>
-                    </div>
+            <div class="container-texto-soluçoes">
+              <p>DESCUBRA AS NOVIDADES EM NOSSOS PRODUTOS E SERVIÇOS PARA UMA EXPERIÊNCIA DE EXCELÊNCIA</p>
+            </div>
 
-                    <div class="swiper-slide">
-                      <div class="prod-painel-eletrico-img-2"></div>
-                        <div class="prod-painel-eletrico-desc-2">
-                          <h4>Transformador - TZW x800</h4>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-
-                      <div class="prod-painel-eletrico-img-3"></div>
-                      <div class="prod-painel-eletrico-desc-3">
-                        <h4>Transformador - TZW x800</h4>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">Resize me!</div>
-                    <div class="swiper-slide">Resize me!</div>
-                    <div class="swiper-slide">Resize me!</div>
-                    <div class="swiper-slide">Resize me!</div>
-                    <div class="swiper-slide">Resize me!</div>
-                    <div class="swiper-slide">Resize me!</div>
-                    <div class="swiper-slide">Resize me!</div>
-                  </div>
-                  <div class="swiper-button-next"></div>
-                  <div class="swiper-button-prev"></div>
-                </div>
-
-                <!-- Swiper JS -->
-                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-                <!-- Initialize Swiper -->
-                <script>
-                  var swiper = new Swiper('.swiper', {
-                    slidesPerView: 3,
-                    direction: getDirection(),
-                    navigation: {
-                      nextEl: '.swiper-button-next',
-                      prevEl: '.swiper-button-prev',
-                    },
-                    on: {
-                      resize: function () {
-                        swiper.changeDirection(getDirection());
-                      },
-                    },
-                  });
-
-                  function getDirection() {
-                    var windowWidth = window.innerWidth;
-                    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
-
-                    return direction;
-                  }
-                </script>
-
-
-
-
-            <!-- PARALAX -->
-            <div class="paralax"></div>
-
+            <hr style="margin-top: 30px; margin-bottom: 30px;">
             <div class="container-saibaMais">
               <h2>SAIBA MAIS</h2>
             </div>
-            <hr style="margin-top: -30px; margin-bottom: 30px;">
+            
               
               
 
@@ -248,8 +183,10 @@
                 </div>
                 <div class="text-container">
                     <p>
-                        Da inovação dos painéis eletrônicos à proteção dos transformadores blindados, nossa tecnologia líder garante eficiência,
-                        segurança e economia. Dê o salto rumo a um futuro sustentável e vantajoso para o seu negócio, enquanto faz a diferença pelo meio ambiente. 
+                      Explore uma vasta seleção de produtos e benefícios que nossos serviços oferecem, 
+                      caracterizados pela qualidade excelente, diversidade e atendimento excepcional. 
+                      Descubra como a Ep Energy se destaca como a opção confiável para soluções energéticas
+                      de primeira linha.
                     </p>
                 </div>
             </div>
