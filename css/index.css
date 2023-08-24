@@ -1,15 +1,51 @@
+
+/* CONFIGURAÇOES GERAIS*/
 .body{
     margin: 0;
     padding: 0;
      background-color: #F3F2F0; 
 }
 
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.woff");
+}
+@font-face {
+  font-family: "Inter-Light";
+  src: url("/fonts/Inter-Light.woff");
+}
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("/fonts/Montserrat-Regular.woff");
+}
+
 h1{
-    font-size: 25px;
+    font-size: 30px;
+    font-family: "Montserrat-Regular";
 }
 h2{
-    font-size: 18px;
+    font-size: 19px;
+    font-family: "Montserrat-Regular";
+    font-weight: 600;
 }
+h3{
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  font-weight: 600;
+}
+h4{
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+}
+p{
+  font-size: 15px;
+  font-family: "Montserrat-Regular";
+  font-weight: 500;
+}
+
+
+
+
 
 
 /* MENU NAVEGAÇÃO*/
@@ -18,10 +54,7 @@ h2{
     background-color: #0a1625;
 }
 
-
-
 .navbar-brand {
-    color: white;
     margin-left: 4.5%;
     max-width: 100%; /*Para garantir que o logotipo não exceda o tamanho do contêiner */
     height: 100%;    /*Para manter a proporção do logotipo */
@@ -52,9 +85,11 @@ h2{
 }
 
 .nav-link {
-    color: white;
+    color:  rgb(255, 255, 255);
     padding: 0px;
     margin-left: 10px;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
     
 }
 
@@ -76,12 +111,15 @@ h2{
 
 .custom-dropdown-menu a.dropdown-item {
   color: #cecccc; /* Cor do texto no hover */
+  
+  font-size: 12px;
+  font-family: "Montserrat-Regular";
 }
 
 /* Estilo para o efeito de hover */
 .custom-dropdown-menu a.dropdown-item:hover {
-  background-color: #082f5f; /* Cor de fundo personalizada no hover */
-  color: #ffffff; /* Cor do texto no hover */
+  background-color: rgba(238, 240, 240, 0.24);
+  cursor: pointer;
 }
 
 
@@ -182,6 +220,8 @@ h2{
 
 
 
+
+
 /* NOSSAS SOLUCOES*/
 .container-solucoes {
     display: flex;
@@ -269,9 +309,9 @@ h2{
     margin: auto;
   }
   
-    .prod-painel-eletrico-desc p,
-    .prod-painel-eletrico-desc-2 p,
-    .prod-painel-eletrico-desc-3 p {
+    .prod-painel-eletrico-desc h4,
+    .prod-painel-eletrico-desc-2 h4,
+    .prod-painel-eletrico-desc-3 h4 {
     margin: 0;
     padding: 10px;
     color: white;
@@ -319,9 +359,9 @@ h2{
 }
 }
 
-.container-saibaMais h1 {
+.container-saibaMais h2 {
     text-align: left; /* Centraliza o texto horizontalmente */
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     margin-top: 50px;
 }
 
