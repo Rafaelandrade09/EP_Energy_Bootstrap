@@ -4,20 +4,19 @@
 .containerForm {
    
     width: 100%;
-    max-width: 60%;
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    margin: 0 auto;
 }
 
 
 .contact-form {
-    
+    max-width: 60%;
     background-color: #f0f0f0fa;
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0px 2px 2px gray;
+    margin: 0 auto;
 }
 
 .form-group {
@@ -76,49 +75,7 @@
 }
 
 
-.footer {
-    background-color: #0a1625;
-    color: white;
-    padding: 20px 0;
-    margin-top: 60px;
-    box-shadow: none;
-}
-
-.container {
-    max-width: 1200px; /* Ajuste o valor conforme necessário */
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    margin: 0;
-    justify-content: flex-end; /* Alinha toda a lista à direita */
-}
-
-.linkFormater {
-    text-decoration: none;
-    color: white;
-}
-
-.logo {
-    width: 250px; /* Ajusta a largura máxima */
-    margin-top: -50px;
-}
 
 
-.div-footer-final{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
 
-.div-footer-final p{
-    font-size: 10px;
-    margin-top: 2px;
-}
+
