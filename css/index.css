@@ -183,7 +183,7 @@ p{
 
   .titulo-diferenciais h1 {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 60px;
     color: #000000;
   }
 
@@ -193,43 +193,46 @@ p{
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
     justify-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 70px;
   }
 
   .container-card > div {
     text-align: center;
-    background-color: #081d38;
-    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.726);
-    width: 360px;
-    height: 420px;
+    background-color: #1b2f49;
+    box-shadow: 2px 2px 3px rgba(51, 51, 51, 0.726);
+    width: 310px;
+    height: 370px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 13px;
-    color: #ffffff;
   }
   .container-card div:hover{
-    transform: scale(1.03);
-    transition: all .5s ease-in;
+    background-color: #274266;
   }
 
-  .container-card h2 {
-    color: #082f5f;
-    margin-bottom: 10px;
-    font-weight: bolder;
+  .container-card h3{
+    color: white;
   }
 
   .container-card p {
-    color: #e9e9e9;
+    color: #2e2e2e;
     text-align: center;
     padding: 9px;
+    height: 100%;
+    width: 310px;
+    border-radius: 0px 50px 13px 13px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 34px;
   }
 
   .container-card img {
-    max-width: 70px;
+    max-width: 60px;
     margin-bottom: 15px;
   }
 
@@ -294,7 +297,6 @@ p{
   font-weight: lighter;
   width: 60%;
   text-align: center;
-  font-family:"Cinzel-Regular.woff";
 }
 
 
@@ -361,10 +363,6 @@ video {
     width: 100%;
 
 }
-.text-container p{
-  
-}
-
 
 
 .banner-final{
@@ -377,9 +375,33 @@ video {
 }
 
 
+.footer-link{
+  width: 100%;
+  height: 70px;
+  background-color: #16283f;
+}
+.nav {
+  display: flex; /* Para usar flexbox */
+  gap: 250px;
+  justify-content: center;
+  align-items: center; /* Centralizar verticalmente */
+  height: 70px;
+}
+
+.linkFormater {
+  text-decoration: none;
+  color:rgb(219, 219, 219);
+  font-size: 16px;
+}
+.linkFormater:hover {
+  color: #8a8a8a;
+}
+
+
+
 
 .footer {
-    background-color: #0a1625;
+    background-color: #16283f;
     color: white;
     padding: 20px 0;
 }
@@ -392,19 +414,7 @@ video {
     justify-content: space-between;
 }
 
-.nav {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    font-size: 12px;
-    margin: 0;
-    justify-content: flex-end; /* Alinha toda a lista à direita */
-}
 
-.linkFormater {
-    text-decoration: none;
-    color: white;
-}
 
 .logo {
     width: 250px; /* Ajusta a largura máxima */
