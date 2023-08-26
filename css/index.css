@@ -239,12 +239,11 @@ p{
 
 /* NOSSAS SOLUCOES*/
 .banner-solucoes{
-  height: 850px;
   width: 100%;
   margin-top: 0px;
   z-index: 1;
-  
-  box-shadow: 0px 0px 4px gray;
+ box-shadow: 0px 0px 4px gray;
+ margin-top: 30px;
 }
 .banner-solucoes img{
   width: 100%;
@@ -254,50 +253,103 @@ p{
 }
 
 
+
 .container-botao-solucoes{
-    margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 
 }
 .botao-solucoes{
-  border: 1px solid rgb(184, 184, 184);
-  padding: 10px;
-  border-radius: 50px;
-  width: 30%;
-  text-decoration: none;
+border: 1px solid rgb(184, 184, 184);
+padding: 10px;
+border-radius: 50px;
+width: 30%;
+text-decoration: none;
 }
 .botao-solucoes h1{
-  text-align: center;
-  margin: 0 auto;
-  color: rgb(184, 184, 184);
-  font-weight:normal;
-  font-size: 22px;
+text-align: center;
+margin: 0 auto;
+color: rgb(184, 184, 184);
+font-weight:normal;
+font-size: 22px;
 }
 .botao-solucoes:hover {
-  border: 1px solid rgb(37, 37, 37);
-  transition: 1s;
+border: 1px solid rgb(37, 37, 37);
+transition: 1s;
 }
 .botao-solucoes:hover h1 {
-  color: rgb(37, 37, 37); /* Aplica a cor diretamente ao h1 ao passar o mouse sobre o botão */
-  transition: 1s;
+color: rgb(37, 37, 37); /* Aplica a cor diretamente ao h1 ao passar o mouse sobre o botão */
+transition: 1s;
 }
 
 .container-texto-soluçoes{
-  margin-top: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container-texto-soluçoes p{
-  font-size: 20px;
-  color: rgb(151, 151, 151);
-  font-weight: lighter;
-  width: 60%;
-  text-align: center;
+font-size: 20px;
+color: rgb(97, 97, 97);
+font-weight: lighter;
+width: 60%;
+text-align: center;
 }
+
+
+/* GALERIA */
+.container-galeria {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #080835;
+  margin-top: 20px;
+  box-shadow: 1px 2px 3px rgb(80, 80, 80);
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+
+}
+
+.item {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  overflow: hidden;
+}
+
+.item a {
+  display: block;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  margin-top: -50px;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.item:hover img {
+  transform: scale(1.1);
+}
+
+.container-galeria:hover .item img {
+  filter: brightness(30%);
+  transition: 1.5s;
+  transition: 3s;
+}
+
+.container-galeria:hover .item:hover img {
+  filter: brightness(100%);
+}
+
+
+
+
 
 
 
