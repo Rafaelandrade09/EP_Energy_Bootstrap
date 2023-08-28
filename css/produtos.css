@@ -1,3 +1,76 @@
+/* MENU NAVEGAÇÃO*/
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #07121F;
+    height: 60px;
+    z-index: 1000;
+    
+}
+  
+  .container-fluid{
+    width: 80%;
+  }
+  /* Media Query para telas maiores que 1080px */
+  @media screen and (min-width: 1700px) {
+    .container-fluid {
+        width: 80%;
+        margin: 0auto;
+    }
+  }
+  
+  
+  /* Estilo para o menu suspenso personalizado */
+  .custom-dropdown-menu {
+    background-color: #07121F; /* Cor de fundo personalizada */
+    border: 1px solid rgba(197, 197, 197, 0.267);
+    margin-left: 20px;
+  }
+  
+  .custom-dropdown-menu a.dropdown-item {
+    color: #cecccc; /* Cor do texto no hover */
+    
+    font-size: 12px;
+    font-family: "Montserrat-Regular";
+  }
+  
+  /* Estilo para o efeito de hover */
+  .custom-dropdown-menu a.dropdown-item:hover {
+    background-color: rgba(238, 240, 240, 0.24);
+    cursor: pointer;
+  }
+  
+  .navbar-brand{
+    height: 100%;    
+    display: block;
+    padding: 0px;    
+   margin-left: -15px;
+  }
+  
+  .nav-link {
+    color:  rgb(255, 255, 255);
+    padding: 0px;
+    margin-left: 10px;
+    font-family: "Montserrat-Regular";
+    font-size: 14px;
+    margin-right: 60px;
+    
+  }
+  
+  .nav-link:hover {
+      color: rgb(157, 158, 158);
+      transition: 0.1s;
+  }
+  
+  .navbar-toggler {
+      color:white;
+  }
+  
+
+
+
 
 .bloco1 {
     padding: 40px;
@@ -10,7 +83,7 @@
 
 .bloco2 {
     padding: 40px;
-    margin-top: 40px;
+    margin-top: 80px;
   
 }
 
@@ -38,8 +111,8 @@
 
 .caracteristicas {
     border-radius: 5px;
-    background: rgb(198, 198, 198, 0.5);
-    padding: 10px;
+    background:  #ebeff5;
+    padding: 20px;
     margin-top: 100px;
 
 }
@@ -55,7 +128,7 @@
 .bloco3 {
     height: 100%;
     padding: 20px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     
 }

@@ -1,76 +1,7 @@
 
-/* CONFIGURAÇOES GERAIS*/
-
-.body{
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff; 
-
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* IE/Edge */
-    user-select: none; /* Padrão */
-}
-
-/* CORPO PRINCIPAL */
-.containerPrincipal{
-  width: 80%;
-  background-color: #ffffff; 
-  height: 100%;
-  margin: 0 auto;
-}
-/* Media Query para telas maiores que 1080px */
-@media screen and (min-width: 1700px) {
-  .containerPrincipal {
-      width: 70%;
-      margin: 0auto;
-  }
-}
-
-
-@font-face {
-  font-family: "Montserrat-Regular";
-  src: url("/fonts/Montserrat-Regular.woff");
-}
-
-@font-face {
-  font-family: "Inter-Regular";
-  src: url("/fonts/Inter-Regular.woff");
-}
-
-@font-face {
-  font-family: "Cinzel-Regular.woff";
-  src: url("/fonts/Cinzel-Regular.woff");
-}
-
-h1{
-    font-size: 30px;
-    font-family: "Montserrat-Regular";
-}
-h2{
-    font-size: 19px;
-    font-family: "Montserrat-Regular";
-    font-weight: 600;
-}
-h3{
-  font-size: 15px;
-  font-family: "Montserrat-Regular";
-  font-weight: 600;
-}
-h4{
-  font-size: 15px;
-  font-family: "Montserrat-Regular";
-}
-p{
-  font-size: 15px;
-  font-family: "Inter-Regular";
-  font-weight: 500;
-  word-spacing: normal;
-}
 
 
 /* MENU NAVEGAÇÃO*/
-
 .navbar{
   position: fixed;
   top: 0;
@@ -163,6 +94,12 @@ p{
 .container-banner-capa img{
 margin: 0 auto;
 width: 100%;
+height: 100%;
+}
+@media screen and (min-width: 1700px) {
+  .container-banner-capa img{
+    height: 923px;
+    }
 }
 
 
@@ -187,7 +124,7 @@ width: 100%;
   .titulo-diferenciais h1 {
     margin: 0;
     margin-top: 60px;
-    color: #000000;
+    
   }
 
 
@@ -200,7 +137,7 @@ width: 100%;
 
   .container-card > div {
     text-align: center;
-    background-color: #1b2f49;
+    background-color: #13263d;
     box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.979);
     width: 290px;
     height: 370px;
@@ -256,7 +193,7 @@ width: 100%;
   height: 400px;
   width: 100%;
   border-radius: 5px;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 2px;
   
 }
@@ -367,6 +304,7 @@ color: rgb(97, 97, 97);
 font-weight: lighter;
 width: 60%;
 text-align: center;
+margin-bottom: 30px;
 }
 
 
@@ -374,13 +312,11 @@ text-align: center;
 .container-galeria {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: #080835;
+  background-color:#ebeff5;
   margin-top: 20px;
-  box-shadow: 1px 2px 3px rgb(80, 80, 80);
   width: 100%;
   height: 600px;
   margin: 0 auto;
-
 }
 
 .item {
@@ -389,6 +325,7 @@ text-align: center;
   box-sizing: border-box;
   height: 100%;
   overflow: hidden;
+  border: 0.5px solid rgba(201, 201, 201, 0.514);
 }
 
 .item a {
@@ -400,7 +337,12 @@ text-align: center;
   height: auto;
   margin-top: -50px;
   object-fit: cover;
-  filter: brightness(70%);
+  filter: brightness(60%);
+}
+@media (max-width: 1700px) {
+  .item img {
+    margin-top: 0px;
+  }
 }
 
 .item:hover img {
@@ -410,7 +352,7 @@ text-align: center;
 .container-galeria:hover .item img {
   filter: brightness(30%);
   transition: 1.5s;
-  transition: 3s;
+  transition: 2s;
 }
 
 .container-galeria:hover .item:hover img {
@@ -491,9 +433,6 @@ video {
 
 
 
-
-
-
 /* CONTATO*/
 
 .container-titulo-contato{
@@ -552,11 +491,11 @@ video {
 }
 
 .contact-info h3 {
-  margin-left: 60px;
+  margin-left: 188px;
 }
-@media (max-width: 1700px) {
+@media (max-width: 1600px) {
   .contact-info h3 {
-    margin-left: 50px;
+    margin-left: 135px;
   }
 }
 
@@ -600,62 +539,7 @@ video {
 
 
 
-/* FOOTER */
-.footer-link{
-  width: 100%;
-  height: 70px;
-  background-color: #16283f;
-  margin-top: 60px;
-}
-.nav {
-  display: flex; /* Para usar flexbox */
-  gap: 250px;
-  justify-content: center;
-  align-items: center; /* Centralizar verticalmente */
-  height: 70px;
-}
-
-.linkFormater {
-  text-decoration: none;
-  color:rgb(219, 219, 219);
-  font-size: 16px;
-}
-.linkFormater:hover {
-  color: #8a8a8a;
-}
 
 
 
 
-.footer {
-    background-color: #16283f;
-    color: white;
-    padding: 20px 0;
-}
-
-.container {
-    max-width: 1200px; /* Ajuste o valor conforme necessário */
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-
-.logo {
-    width: 250px; /* Ajusta a largura máxima */
-    margin-top: -50px;
-}
-
-
-.div-footer-final{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.div-footer-final p{
-    font-size: 10px;
-    margin-top: 2px;
-}
