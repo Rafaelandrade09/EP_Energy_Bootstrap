@@ -23,7 +23,9 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
       
-      <!--------------Menu de Navegaçao---------------->
+          <!-- ==========================================================================
+                                      BARRA NAVEGAÇÂO
+          ===============================================================================-->
       <header>
         <nav class="navbar navbar-expand-md" id="navbar-principal" >
             <div class="container-fluid">
@@ -54,7 +56,7 @@
                         <li class="nav-item scrollto">
                             <a class="nav-link " href="#contato">CONTATO</a>
                         </li>
-                       
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NOSSAS SOLUÇÕES</a>
                             <ul class="dropdown-menu custom-dropdown-menu" id="dropdown-menu">
@@ -90,15 +92,22 @@
       });
     </script>
 
-     <!-------------- Menu de Navegaçao ---------------->
 
 
-      <!-- BANNER -->
+
+      <!-- ==========================================================================
+                                      BANNER 
+      ==============================================================================-->
       <div class="container-banner-capa" id="home" data-aos="zoom-out" data-aos-delay="100">
         <img src="banners/banner-principal.png"/>
       </div>
 
-      <!-- AREA VANTAGENS -->
+
+
+
+      <!-- ==========================================================================
+                                      VANTAGENS 
+      ===============================================================================-->
       <div class="containerPrincipal"> 
             <div class="container-diferenciais" data-aos="fade-up">
 
@@ -146,7 +155,9 @@
 
 
 
-              <!-- SOBRE -->
+            <!-- ==========================================================================
+                                      SOBRE 
+            ===============================================================================-->
               <div class="container-sobre" id="sobre">
                 <div class="containerPrincipal" style="background-color: #ebeff5; height: 720px;">
                   <div class="titulo-sobre" data-aos="fade-up">
@@ -170,11 +181,10 @@
               </div>
 
 
-
+          <!-- ==========================================================================
+                                      OBJETIVOS 
+          ===============================================================================-->
           <div class="containerPrincipal"  id="objetivos"> 
-
-            <!-- NOSSOS OBJETIVOS -->
-
             <div class="container-lista">
               <div class="titulo-objetivos" data-aos="fade-up">
                 <h1>NOSSOS OBJETIVOS</h1>
@@ -239,8 +249,11 @@
             </div>
             <hr>
 
-            <!-- PRODUTOS -->
 
+
+          <!-- ==========================================================================
+                                      GALERIA PRODUTOS 
+          ===============================================================================-->
             <div class="container-botao-solucoes" data-aos="fade-left" data-aos-delay="100">
                 <a class="botao-solucoes" href="solucoes-transformadores.html">
                   <h1>NOSSAS SOLUÇÕES</h1>
@@ -287,6 +300,11 @@
         </div> <!-- FIM CORPO PRINCIPAL-->  
 
 
+
+
+          <!-- ==========================================================================
+                                      SAIBA MAIS 
+          ===============================================================================-->        
         <div class="container-saibaMais-geral" id="saibaMais" data-aos="fade-down">
           <div class="containerPrincipal" style="background-color:   #ebeff5;">
             <div class="container-saibaMais">
@@ -312,113 +330,75 @@
         </div>
           
 
-          <!-- CONTATO -->
+
           
-            <div class="container-titulo-contato" id="contato" data-aos="fade-down">
-              <h1>ENTRE EM CONTATO</h1>
-            </div>
-            <div class="containerPrincipal"> 
-              <div class="container-contato" data-aos="fade-up" data-aos-delay="100">
-                <div class="contact-form" >
+          <!-- ==========================================================================
+                                      CONTATO 
+          ===============================================================================-->
+          <div class="container mt-5" data-aos="fade-up">
+            <div class="row col-lg-12">
+              <div class="col-lg-7 col-md-7 col-sm-12">
+                <div class="bg-light p-4 rounded">
+                  <h2>Entre em Contato</h2>
                   <form>
                     <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="nome">Nome:</label>
-                          <input type="text" id="nome" name="nome" class="form-control" required >
-                        </div>
+                      <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome" required>
                       </div>
-                      <div class="col-md-6">
-                        <div class="form-group">
-                          <label for="sobrenome">Sobrenome:</label>
-                          <input type="text" id="sobrenome" name="sobrenome" class="form-control" required >
-                        </div>
+                      <div class="mb-3 col-lg-6 col-md-6 col-sm-12">
+                        <label for="sobrenome" class="form-label">Sobrenome:</label>
+                        <input type="text" class="form-control" id="sobrenome" required>
                       </div>
+                  </div>
+                    <div class="mb-3">
+                      <label for="empresa" class="form-label">Nome da Empresa:</label>
+                      <input type="text" class="form-control" id="empresa" required>
                     </div>
-                    <div class="form-group">
-                      <label for="empresa">Nome da Empresa:</label>
-                      <input type="text" id="empresa" name="empresa" class="form-control" required >
-                    </div>
-                    <div class="row">
+                    <div class="row mb-3">
                       <div class="col-md-5">
-                        <div class="form-group">
-                          <label for="estado">Estado:</label>
-                          <select id="estado" name="estado" class="form-control" required>
-                            <option value="SP" selected>São Paulo (SP)</option>
-                            <option value="AC">Acre (AC)</option>
-                              <option value="AL">Alagoas (AL)</option>
-                              <option value="AP">Amapá (AP)</option>
-                              <option value="AM">Amazonas (AM)</option>
-                              <option value="BA">Bahia (BA)</option>
-                              <option value="CE">Ceará (CE)</option>
-                              <option value="DF">Distrito Federal (DF)</option>
-                              <option value="ES">Espírito Santo (ES)</option>
-                              <option value="GO">Goiás (GO)</option>
-                              <option value="MA">Maranhão (MA)</option>
-                              <option value="MT">Mato Grosso (MT)</option>
-                              <option value="MS">Mato Grosso do Sul (MS)</option>
-                              <option value="MG">Minas Gerais (MG)</option>
-                              <option value="PA">Pará (PA)</option>
-                              <option value="PB">Paraíba (PB)</option>
-                              <option value="PR">Paraná (PR)</option>
-                              <option value="PE">Pernambuco (PE)</option>
-                              <option value="PI">Piauí (PI)</option>
-                              <option value="RJ">Rio de Janeiro (RJ)</option>
-                              <option value="RN">Rio Grande do Norte (RN)</option>
-                              <option value="RS">Rio Grande do Sul (RS)</option>
-                              <option value="RO">Rondônia (RO)</option>
-                              <option value="RR">Roraima (RR)</option>
-                              <option value="SC">Santa Catarina (SC)</option>
-                              <option value="SE">Sergipe (SE)</option>
-                              <option value="TO">Tocantins (TO)</option>
-                          </select>
-                        </div>
+                        <label for="estado" class="form-label">Estado:</label>
+                        <select class="form-select" id="estado" required>
+                          <option value="SP" selected>São Paulo (SP)</option>
+                          <!-- ... Outras opções de estado ... -->
+                        </select>
                       </div>
                       <div class="col-md-7">
-                        <div class="form-group">
-                          <label for="cidade">Cidade:</label>
-                          <input type="text" id="cidade" name="cidade" class="form-control" required>
-                        </div>
+                        <label for="cidade" class="form-label">Cidade:</label>
+                        <input type="text" class="form-control" id="cidade" required>
                       </div>
                     </div>
-                    <div class="row">
+                    <div class="row mb-3">
                       <div class="col-md-5">
-                        <div class="form-group">
-                          <label for="celular">Celular:</label>
-                          <input type="tel" id="celular" name="celular" class="form-control" required placeholder="(xx) xxxxx-xxxx">
-                        </div>
+                        <label for="celular" class="form-label">Celular:</label>
+                        <input type="tel" class="form-control" id="celular" required placeholder="(xx) xxxxx-xxxx">
                       </div>
                       <div class="col-md-7">
-                        <div class="form-group">
-                          <label for="email">E-mail:</label>
-                          <input type="email" id="email" name="email" class="form-control" required >
-                        </div>
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email" required>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-primary botao-enviar">Enviar E-mail</button>
+                    <button type="submit" class="btn btn-primary">Enviar E-mail</button>
                   </form>
                 </div>
-                <div class="contact-info">
-                  <h3>Informações de Contato:</h3>
-                  <div class="infodanilo">
-                    <i class="fas fa-phone fa-2x"></i>
-                    <p>+55 (17) 99147-9585</p>
-                  </div>
-                  
-                  <div class="infodanilo">
-                    <i class="fas fa-envelope fa-2x"></i>
-                    <p>daniloaraujo@gmail.com</p>
-                  </div>
-  
+              </div>
+              <div class="col-lg-5 col-md-5 col-sm-12 mt-4 mt-md-0">
+                <div class="contact-info-estilo p-4 rounded">
+                  <h2>Informações de Contato</h2>
+                  <p><i class="fas fa-phone"></i> +55 (17) 99147-9585</p>
+                  <p><i class="fas fa-envelope"></i> daniloaraujo@gmail.com</p>
                   <div class="whatsapp-button">
-                    <a href="https://api.whatsapp.com/send?phone=5517991479585" target="_blank">Ir para o WhatsApp</a>
+                    <a href="https://api.whatsapp.com/send?phone=5517991479585" target="_blank" class="btn btn-success">Ir para o WhatsApp</a>
                   </div>
                 </div>
               </div>
-            </div> 
+            </div>
+          </div>
 
-          
-              <!-- FOOTER -->
+
+          <!-- ==========================================================================
+                                      FOOTER 
+          ===============================================================================-->
               <div class="footer-link">
                 <div class="container-link">
                   <ul class="nav">
