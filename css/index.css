@@ -103,177 +103,7 @@ height: 100%;
 
 
 
-
-/* VANTAGENS - DIFERENCIAIS */
-
-.container-diferenciais{
-  position: relative;
-  z-index: 2; /* Coloca a seção de diferenciais sobre o banner */
-  width: 100%;
-  height: 400px;
-  margin-top: 0px;
-}
-
-.titulo-diferenciais {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .titulo-diferenciais h1 {
-    margin: 0;
-    margin-top: 60px;
-    
-  }
-
-
-.container-card {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 70px;
-  width: 100%;
-  }
-
-  .container-card > div {
-    text-align: center;
-    background-color: #0e1f33;
-    box-shadow: 1px 1px 3px rgba(51, 51, 51, 0.979);
-    width: 290px;
-    height: 370px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 13px;
-    color: #ffffff;
-  }
-  .container-card div:hover{
-    background-color: #274266;
-  }
-
-  .container-card h3{
-    color: white;
-  }
-
-  .container-card p {
-    color: #2e2e2e;
-    text-align: center;
-    padding: 9px;
-    height: 94.7%;
-    width:  288px;
-    border-radius: 0px 35px 13px 13px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    background-color: white;
-    margin-top: 34px;
-  }
-
-  .container-card img {
-    max-width: 60px;
-    margin-bottom: 15px;
-  }
-
-
-
-/* SOBRE*/
-
-.sobre-fundo{
-  width: 100%;
-  height: 100%;
-  background-color: #ebeff5;
-  margin-top: -10px;
-  display: flex;
-}
-.titulo-sobre {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 220px;
-}
-
-
-.imagem-esquerda {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
-  margin-top: 20px;
-  margin-bottom: 60px;
-}
-.texto-direita {
-  text-align: justify;
-  margin-top: 110px;
-}
-@media screen and (max-width: 990px) {
-  .texto-direita {
-    text-align: start;
-    margin-top: 20px;
-    margin-bottom: 60px;
-  }
-  .imagem-esquerda {
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (max-width: 1330px) {
-  .texto-direita {
-    text-align: start;
-    margin-top: 20px;
-  }
-}
-
-
-
-
-/* NOSSOS OBJETIVOS */
-
-.container-lista {
-  margin-top: 20px;
-  width: 100%;
-  margin: 0 auto;
-  margin-bottom: 30px;
-  margin-top: 110px;
-  
-}
-
-.titulo-objetivos {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-.container-subtitulo {
-  display: flex;
-  justify-content: left;
-  align-items: start;
-  width: 100%;
-  margin: 40px auto 0; /* Adicione margem superior para criar espaço entre o topo do fundo e o título */
-  
-
-}
-
-.container-subtitulo h2 {
-  text-align: center;
-  color: #082f5f;
-  margin: 0; /* Remova a margem superior padrão do h2 */
-}
-
-.container-texto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.container-lista p {
-  text-align: start;
-  width: 100%;
-}
-
-
-
-/* NOSSAS SOLUCOES LINK*/
+/* NOSSAS SOLUCOES */
 .container-botao-solucoes{
   margin-top: 80px;
   display: flex;
@@ -349,12 +179,133 @@ margin-bottom: 30px;
 
 
 
+
+
+/* SOBRE*/
+
+.sobre-fundo{
+  width: 100%;
+  height: 100%;
+  background-color: #ebeff5; 
+  display: flex;
+  margin-top: 80px;
+}
+.titulo-sobre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+
+.imagem-esquerda {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.texto-direita {
+  text-align: justify;
+  margin-top: 110px;
+}
+@media screen and (max-width: 990px) {
+  .texto-direita {
+    text-align: start;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  .imagem-esquerda {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .texto-direita {
+    text-align: start;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+/* NOSSOS OBJETIVOS */
+
+.container-imagem {
+  position: relative;
+  overflow: hidden;
+}
+
+.container-imagem img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.26); /* Cor de fundo semi-transparente */
+}
+
+.container-lista {
+  top: 110px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.titulo-objetivos {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-subtitulo {
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  width: 100%;
+  margin: 40px auto 0;
+}
+
+.container-subtitulo h2 {
+  text-align: center;
+  color: rgb(240, 183, 29);
+  margin: 0;
+}
+
+.container-texto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container-lista p {
+  text-align: start;
+  width: 100%;
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
 /* AREA VIDEO */
 
 .container-saibaMais-geral {
   width: 100%;
   background-color: #ebeff5;
-  margin-top: 50px;
   padding: 20px; /* Adicione algum espaçamento interno */
 }
 
@@ -364,7 +315,7 @@ margin-bottom: 30px;
 }
 
 .container-saibaMais h1 {
-  margin-top: 20px; /* Reduza o espaçamento superior */
+  margin-top: 40px; /* Reduza o espaçamento superior */
 }
 
 .container {
@@ -393,6 +344,7 @@ video {
   width: 100%;
   height: auto; /* Para manter a proporção do vídeo */
   display: block;
+  box-shadow: 2px 2px 2px gray;
 }
 
 .tema-video {
@@ -414,9 +366,19 @@ video {
 
 /* CONTATO*/
 
+.container-titulo-contato{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
 
+.form-estilo{
+  border: 1px solid rgb(189, 189, 189);
+}
 .contact-info-estilo {
-  background-color: #f6f6f7;
+  border: 1px solid rgb(189, 189, 189);
   -webkit-user-select: text; /* Safari */
     -moz-user-select: text; /* Firefox */
     -ms-user-select: text; /* IE/Edge */
@@ -432,7 +394,8 @@ video {
 
 .whatsapp-button a {
   display: inline-block;
-  background-color:#1aa34d;
+  background-color:#0f8d3d;
+  box-shadow: 1px 1px 3px rgb(5, 61, 5);
   color: white;
   padding: 10px 30px;
   border-radius: 4px;

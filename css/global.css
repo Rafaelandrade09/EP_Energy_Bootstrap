@@ -21,7 +21,7 @@
 /* Media Query para telas maiores que 1080px */
 @media screen and (min-width: 1700px) {
     .containerPrincipal {
-    width: 70%;
+    width: 60%;
     margin: 0auto;
     }
 }
@@ -100,7 +100,7 @@
 h1{
     font-size: 30px;
     font-family: "Montserrat-SemiBold";
-    color: #303b49;
+    color: #082f5f;
 }
 h2{
     font-size: 19px;
