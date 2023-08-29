@@ -29,22 +29,22 @@
 
 @font-face {
     font-family: "Montserrat-Regular";
-    src: url("/fonts/Montserrat-Regular.woff");
+    src: url("../fonts/Montserrat-Regular.woff");
 }
 
 @font-face {
     font-family: "Montserrat-SemiBold";
-    src: url("/fonts/Montserrat-SemiBold.woff");
+    src: url("../fonts/Montserrat-SemiBold.woff");
 }
 
 @font-face {
     font-family: "Inter-Regular";
-    src: url("/fonts/Inter-Regular.woff");
+    src: url("../fonts/Inter-Regular.woff");
 }
 
 @font-face {
     font-family: "Cinzel-Regular.woff";
-    src: url("/fonts/Cinzel-Regular.woff");
+    src: url("../fonts/Cinzel-Regular.woff");
 }
 
 h1{
