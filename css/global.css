@@ -1,0 +1,137 @@
+/* CONFIGURAÇOES GERAIS*/
+
+.body{
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; 
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE/Edge */
+    user-select: none; /* Padrão */
+}
+
+/* CORPO PRINCIPAL */
+.containerPrincipal{
+    width: 80%;
+    background-color: #ffffff; 
+    height: 100%;
+    margin: 0 auto;
+}
+/* Media Query para telas maiores que 1080px */
+@media screen and (min-width: 1700px) {
+    .containerPrincipal {
+    width: 70%;
+    margin: 0auto;
+    }
+}
+
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("/fonts/Montserrat-Regular.woff");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("/fonts/Montserrat-SemiBold.woff");
+}
+
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("/fonts/Inter-Regular.woff");
+}
+
+@font-face {
+    font-family: "Cinzel-Regular.woff";
+    src: url("/fonts/Cinzel-Regular.woff");
+}
+
+h1{
+    font-size: 30px;
+    font-family: "Montserrat-SemiBold";
+    color: #303b49;
+}
+h2{
+    font-size: 19px;
+    font-family: "Montserrat-Regular";
+    font-weight: 600;
+}
+h3{
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+    font-weight: 600;
+}
+h4{
+    font-size: 15px;
+    font-family: "Montserrat-Regular";
+}
+p{
+    font-size: 15px;
+    font-family: "Inter-Regular";
+    font-weight: 500;
+    word-spacing: normal;
+}
+
+
+
+
+
+/* FOOTER */
+.footer-link{
+    width: 100%;
+    height: 70px;
+    background-color: #16283f;
+    margin-top: 60px;
+}
+.nav {
+    display: flex; /* Para usar flexbox */
+    gap: 250px;
+    justify-content: center;
+    align-items: center; /* Centralizar verticalmente */
+    height: 70px;
+}
+
+.linkFormater {
+    text-decoration: none;
+    color:rgb(219, 219, 219);
+    font-size: 16px;
+}
+.linkFormater:hover {
+    color: #8a8a8a;
+}
+
+
+
+.footer {
+    background-color: #16283f;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 1200px; /* Ajuste o valor conforme necessário */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.logo {
+    width: 250px; /* Ajusta a largura máxima */
+    margin-top: -50px;
+}
+
+
+.div-footer-final{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.div-footer-final p{
+    font-size: 10px;
+    margin-top: 2px;
+}

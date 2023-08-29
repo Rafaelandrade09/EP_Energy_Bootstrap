@@ -9,423 +9,427 @@
 
   <!-- Link para usar os icones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+      <!-- Link para usar os icones -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
   <link href="vendor/aos/aos.css" rel="stylesheet">
   <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
 
   <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="css/global.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
 
   <title>EP-Energy</title>
 </head>
+      <title>EP-Energy</title>
+  </head>
 
 <body class="body">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
+  <body class="body">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-  <!--------------Menu de Navegaçao---------------->
-  <header>
-    <nav class="navbar navbar-expand-md" id="navbar-principal">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="logo/testelogo.png" style="width: 100%; height: 50px;">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon "></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">CONTATO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="sobre.html">SOBRE</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NOSSAS
-                SOLUÇÕES</a>
-              <ul class="dropdown-menu custom-dropdown-menu" id="dropdown-menu">
-                <li><a class="dropdown-item" href="solucoes-transformadores.html">TRANSFORMADORES</a></li>
-                <li><a class="dropdown-item" href="#">BLINDADOS</a></li>
-                <li><a class="dropdown-item" href="#">PAINEIS SOLARES</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+      <!--------------Menu de Navegaçao---------------->
+      <header>
+        <nav class="navbar navbar-expand-md" id="navbar-principal">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="logo/testelogo.png" style="width: 100%; height: 50px;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contato.html">CONTATO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre.html">SOBRE</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NOSSAS SOLUÇÕES</a>
+                            <ul class="dropdown-menu custom-dropdown-menu" id="dropdown-menu">
+                                <li><a class="dropdown-item" href="paineis-quadros.html">QUADROS E PAINEIS</a></li>
+                                <li><a class="dropdown-item" href="#">BLINDADOS</a></li>
+                                <li><a class="dropdown-item" href="#">PAINEIS SOLARES</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
-  <script>
-    window.addEventListener("scroll", function () {
-      var navbar = document.getElementById("navbar-principal");
-      if (window.scrollY > 0) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
+      <script>
+        window.addEventListener("scroll", function() {
+            var navbar = document.getElementById("navbar-principal");
+            if (window.scrollY > 0) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
 
-    window.addEventListener("scroll", function () {
-      var dropdownMenu = document.getElementById("dropdown-menu");
-      if (window.scrollY > 0) {
-        dropdownMenu.classList.add("dropdown-scrolled");
-
-      } else {
-        dropdownMenu.classList.remove("dropdown-scrolled");
-      }
-    });
-  </script>
+        window.addEventListener("scroll", function() {
+          var dropdownMenu = document.getElementById("dropdown-menu");
+          if (window.scrollY > 0) {
+              dropdownMenu.classList.add("dropdown-scrolled");
+              
+          } else {
+              dropdownMenu.classList.remove("dropdown-scrolled");
+          }
+      });
+    </script>
 
 
-  <!-- BANNER -->
-  <div class="container-banner-capa">
-    <img src="banners/banner-principal.png" />
-  </div>
-
-  <div class="containerPrincipal featured-services">
-
-    <!-- AREA VANTAGENS -->
-    <div class="container-diferenciais">
-
-      <div class="titulo-diferenciais">
-        <h1>NOSSOS DIFERENCIAIS</h1>
-      </div>
-
-      <div class="container-card" data-aos="fade-up">
-
-        <div data-aos="fade-up" data-aos-delay="100">
-          <img src="icons/icone-ok.png" alt="">
-          <div>
-            <h3>QUALIDADE EM PRODUTOS</h3>
-            <p>Garantimos qualidade superior em cada produto através de seleção
-              cuidadosa e testes precisos. Alcançamos desempenho excepcional e eficiência duradoura
-              para impulsionar seu sucesso.</p>
-          </div>
-        </div>
-
-        <div data-aos="fade-up" data-aos-delay="100">
-          <img src="icons/icone-ok.png" alt="">
-          <div>
-            <h3>SERVIÇOS E ATENDIMENTO</h3>
-            <p>Estamos dedicados a superar as expectativas dos clientes com serviços ágeis
-              e soluções personalizadas, proporcionando uma experiência de compra e pós-venda
-              excepcional.</p>
-          </div>
-        </div>
-
-        <div data-aos="fade-up" data-aos-delay="100">
-          <img src="icons/icone-ok.png" alt="">
-          <div>
-            <h3>CONFIANÇA</h3>
-            <p>
-              Trabalhamos com parcerias confiáveis, oferecendo soluções de alto desempenho.
-              Seu sucesso é nossa prioridade, buscando conquistar sua confiança em nossos
-              serviços.</p>
-          </div>
-        </div>
-      </div>
+      <!-- BANNER -->
+      <div class="container-banner-capa">
+        <img src="banners/banner-principal.png"/>
     </div>
 
-  </div>
-   <!-- FIM CORPO PRINCIPAL -->
+      <div class="containerPrincipal"> 
 
-  <!-- SOBRE -->
-  <div class="container-sobre">
-    <div class="containerPrincipal" style="background-color: #ebeff5; height: 720px;">
-      <div class="titulo-sobre">
-        <h1>SOBRE NÓS</h1>
-      </div>
-      <div class="container-sobre">
-        <img src="imagens/imagem-sobre.jpg" class="imagem-esquerda">
-        <div class="texto-direita">
-          <p>
-            A EP Energy nasceu em 2018 e foi criada pelo diretor <strong>Danilo Araujo</strong>, na época, com 10 anos
-            de experiência em projetos de painéis elétricos de baixa e média tensão. Ele decidiu juntar
-            o conhecimento em projetos e produtos com a paixão pelo relacionamento com seus clientes.
-            <br><br> Na EP Energy não apenas lidamos com energia, nós a moldamos, canalizamos e otimizamos para
-            impulsionar o futuro. Somos muito mais do que uma empresa de consultoria e representações no
-            setor elétrico; somos facilitadores de inovação, impulsionadores de conhecimento e
-            catalisadores de parcerias estratégicas.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+            <!-- AREA VANTAGENS -->
+            <div class="container-diferenciais">
 
+              <div class="titulo-diferenciais">
+                <h1>NOSSOS DIFERENCIAIS</h1>
+              </div>
 
-
-  <div class="containerPrincipal">
-
-    <!-- NOSSOS OBJETIVOS -->
-
-    <div class="container-lista">
-
-      <div class="titulo-objetivos">
-        <h1>NOSSOS OBJETIVOS</h1>
-      </div>
-      <hr style="margin-top: 1px; width: 100%; margin: 0 auto; margin-bottom: 30px;">
-
-      <div class="container-subtitulo">
-        <h2>Soluções em Energia: Nosso Compromisso, Sua Vantagem</h2>
-      </div>
-
-      <div class="container-texto">
-        <p>
-          Nosso compromisso é mais do que um slogan, é a base sólida que sustenta
-          cada projeto e parceria que construímos. Como empresa de consultoria e
-          representações, estamos empenhados em oferecer soluções em energia que vão
-          além das expectativas. Cada desafio é uma oportunidade para redefinir o estado
-          atual e criar soluções sob medida que impulsionam o crescimento e a eficiência de
-          nossos clientes.
-        </p>
-      </div>
-
-      <div class="container-subtitulo">
-        <h2>Conhecimento e Excelência: Nossa Missão</h2>
-      </div>
-      <div class="container-texto">
-        <p>
-          Nossa missão é mais do que um propósito; é um guia para cada passo que damos.
-          Estamos empenhados em promover conhecimento de ponta para os profissionais do setor
-          elétrico, capacitando-os com as informações e habilidades necessárias para enfrentar
-          os desafios em constante evolução. Além disso, buscamos incansavelmente as melhores
-          empresas do setor para fornecer aos nossos clientes as soluções mais avançadas e
-          confiáveis.
-        </p>
-      </div>
-
-      <div class="container-subtitulo">
-        <h2>Parcerias que Impulsionam Resultados</h2>
-      </div>
-      <div class="container-texto">
-        <p>
-          Acreditamos no poder das parcerias. Ao colaborar com as principais empresas do setor
-          elétrico, somos capazes de oferecer aos nossos clientes acesso a tecnologias inovadoras,
-          expertise especializada e recursos valiosos. Estamos comprometidos em construir
-          relacionamentos duradouros que transcendem transações comerciais e geram resultados
-          tangíveis.
-
-        </p>
-      </div>
-
-      <div class="container-subtitulo">
-        <h2>Junte-se à Nossa Revolução Energética</h2>
-      </div>
-      <div class="container-texto">
-        <p>
-          Estamos na vanguarda da transformação energética, moldando um futuro mais eficiente
-          e sustentável. Se você busca soluções em energia que transcendem o convencional,
-          anseia por conhecimento que capacite e deseja alavancar a experiência de líderes do
-          setor, você está no lugar certo.
-
-        </p>
-      </div>
-    </div>
-    <hr>
-
-    <!-- PRODUTOS -->
-
-    <div class="container-botao-solucoes">
-      <a class="botao-solucoes" href="solucoes-transformadores.html">
-        <h1>NOSSAS SOLUÇÕES</h1>
-      </a>
-    </div>
-
-    <div class="container-texto-soluçoes">
-      <p>Descubra as novidades em nossos produtos e serviços para uma experiência de excelência</p>
-    </div>
-
-    <!-- GALERIA PRODUTOS -->
-    <div class="container-galeria">
-      <div class="item">
-        <a href="">
-          <img src="imagens/foto-galeria-1.png" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="imagens/foto-galeria-2.png" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="imagens/foto-galeria-3.png" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="imagens/foto-galeria-4.png" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="imagens/foto-galeria-5.png" alt="">
-        </a>
-      </div>
-      <div class="item">
-        <a href="">
-          <img src="imagens/foto-galeria-6.png" alt="">
-        </a>
-      </div>
-    </div>
-  </div> <!-- FIM CORPO PRINCIPAL-->
+              <div class="container-card">
+                
+                <div>
+                  <img src="icons/icone-ok.png" alt="">
+                  <div>
+                    <h3>QUALIDADE EM PRODUTOS</h3>
+                    <p>Garantimos qualidade superior em cada produto através de seleção
+                      cuidadosa e testes precisos. Alcançamos desempenho excepcional e eficiência duradoura
+                      para impulsionar seu sucesso.</p>
+                  </div>
+                </div>
+              
+                <div>
+                  <img src="icons/icone-ok.png" alt="">
+                  <div>
+                    <h3>SERVIÇOS E ATENDIMENTO</h3>
+                    <p>Estamos dedicados a superar as expectativas dos clientes com serviços ágeis
+                      e soluções personalizadas, proporcionando uma experiência de compra e pós-venda
+                      excepcional.</p>
+                  </div>
+                </div>
+              
+                <div>
+                  <img src="icons/icone-ok.png" alt="">
+                  <div>
+                    <h3>CONFIANÇA</h3>
+                    <p>
+                      Trabalhamos com parcerias confiáveis, oferecendo soluções de alto desempenho.
+                      Seu sucesso é nossa prioridade, buscando conquistar sua confiança em nossos 
+                      serviços.</p>
+                  </div>
+                </div>
+              </div>
+              </div>
+          
+            </div> <!-- FIM CORPO PRINCIPAL-->
 
 
-  <div class="container-saibaMais-geral">
-    <div class="containerPrincipal" style="background-color:   #ebeff5;">
-      <div class="container-saibaMais">
-        <h1>SAIBA MAIS</h1>
-      </div>
-      <div class="container">
-        <div class="video-container">
-          <video controls>
-            <source src="video/video_1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="text-container">
-          <p>
-            Explore uma vasta seleção de produtos e benefícios que nossos serviços oferecem,
-            caracterizados pela qualidade excelente, diversidade e atendimento excepcional.
-            Descubra como a Ep Energy se destaca como a opção confiável para soluções energéticas
-            de primeira linha.
-          </p>
-        </div>
-      </div>
-      <h3 class="tema-video">Video - Produtos e serviços da EP-Energy</h3>
-    </div> <!-- FIM CORPO PRINCIPAL-->
-  </div>
 
 
-  <!-- CONTATO -->
-  <div class="container-titulo-contato">
-    <h1>ENTRE EM CONTATO</h1>
-  </div>
-  <div class="containerPrincipal">
-    <div class="container-contato">
-      <div class="contact-form">
-        <form>
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" class="form-control" required>
+              <!-- SOBRE -->
+              <div class="container-sobre">
+                <div class="containerPrincipal" style="background-color: #ebeff5; height: 720px;">
+                  <div class="titulo-sobre">
+                    <h1>SOBRE NÓS</h1>
+                  </div>
+                  <div class="container-sobre">
+                    <img src="imagens/imagem-sobre.jpg" class="imagem-esquerda">
+                    <div class="texto-direita">
+                      <p>
+                        A EP Energy nasceu em 2018 e foi criada pelo diretor <strong>Danilo Araujo</strong>, na época, com 10 anos
+                        de experiência em projetos de painéis elétricos de baixa e média tensão. Ele decidiu juntar
+                        o conhecimento em projetos e produtos com a paixão pelo relacionamento com seus clientes.    
+                        <br><br> Na EP Energy não apenas lidamos com energia, nós a moldamos, canalizamos e otimizamos para 
+                        impulsionar o futuro. Somos muito mais do que uma empresa de consultoria e representações no 
+                        setor elétrico; somos facilitadores de inovação, impulsionadores de conhecimento e 
+                        catalisadores de parcerias estratégicas.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+          <div class="containerPrincipal"> 
+
+            <!-- NOSSOS OBJETIVOS -->
+
+            <div class="container-lista">
+
+              <div class="titulo-objetivos">
+                <h1>NOSSOS OBJETIVOS</h1>
+              </div>
+              <hr style="margin-top: 1px; width: 100%; margin: 0 auto; margin-bottom: 30px;">
+
+                <div class="container-subtitulo">
+                  <h2>Soluções em Energia: Nosso Compromisso, Sua Vantagem</h2>
+                </div>
+
+                <div class="container-texto">
+                    <p>
+                      Nosso compromisso é mais do que um slogan, é a base sólida que sustenta 
+                      cada projeto e parceria que construímos. Como empresa de consultoria e 
+                      representações, estamos empenhados em oferecer soluções em energia que vão 
+                      além das expectativas. Cada desafio é uma oportunidade para redefinir o estado 
+                      atual e criar soluções sob medida que impulsionam o crescimento e a eficiência de 
+                      nossos clientes.
+                    </p>
+                </div>
+        
+                <div class="container-subtitulo">
+                  <h2>Conhecimento e Excelência: Nossa Missão</h2>
+                </div>
+                <div class="container-texto">
+                    <p>
+                      Nossa missão é mais do que um propósito; é um guia para cada passo que damos. 
+                      Estamos empenhados em promover conhecimento de ponta para os profissionais do setor 
+                      elétrico, capacitando-os com as informações e habilidades necessárias para enfrentar 
+                      os desafios em constante evolução. Além disso, buscamos incansavelmente as melhores 
+                      empresas do setor para fornecer aos nossos clientes as soluções mais avançadas e 
+                      confiáveis.
+                    </p>
+                </div>
+        
+                <div class="container-subtitulo">
+                  <h2>Parcerias que Impulsionam Resultados</h2>
+                </div>
+                <div class="container-texto">
+                    <p>
+                      Acreditamos no poder das parcerias. Ao colaborar com as principais empresas do setor
+                      elétrico, somos capazes de oferecer aos nossos clientes acesso a tecnologias inovadoras,
+                      expertise especializada e recursos valiosos. Estamos comprometidos em construir
+                      relacionamentos duradouros que transcendem transações comerciais e geram resultados
+                      tangíveis. 
+        
+                    </p>
+                </div>
+        
+                <div class="container-subtitulo">
+                  <h2>Junte-se à Nossa Revolução Energética</h2>
+                </div>
+                <div class="container-texto">
+                    <p>
+                      Estamos na vanguarda da transformação energética, moldando um futuro mais eficiente 
+                      e sustentável. Se você busca soluções em energia que transcendem o convencional, 
+                      anseia por conhecimento que capacite e deseja alavancar a experiência de líderes do 
+                      setor, você está no lugar certo. 
+        
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <!-- PRODUTOS -->
+
+            <div class="container-botao-solucoes">
+                <a class="botao-solucoes" href="solucoes-transformadores.html">
+                  <h1>NOSSAS SOLUÇÕES</h1>
+                </a>
+            </div>
+
+            <div class="container-texto-soluçoes">
+              <p>Descubra as novidades em nossos produtos e serviços para uma experiência de excelência</p>
+            </div>
+
+            <!-- GALERIA PRODUTOS -->
+            <div class="container-galeria">
+              <div class="item">
+                <a href="">
+                  <img src="imagens/foto-galeria-1.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img src="imagens/foto-galeria-2.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img src="imagens/foto-galeria-3.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img src="imagens/foto-galeria-4.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img src="imagens/foto-galeria-5.png" alt="">
+                </a>
+              </div>
+              <div class="item">
+                <a href="">
+                  <img src="imagens/foto-galeria-6.png" alt="">
+                </a>
+              </div>
+            </div>    
+        </div> <!-- FIM CORPO PRINCIPAL-->  
+
+
+        <div class="container-saibaMais-geral">
+          <div class="containerPrincipal" style="background-color:   #ebeff5;">
+            <div class="container-saibaMais">
+              <h1>SAIBA MAIS</h1>
+            </div>
+            <div class="container">
+              <div class="video-container">
+                <video controls>
+                  <source src="video/video_1.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="text-container">
+                <p>
+                  Explore uma vasta seleção de produtos e benefícios que nossos serviços oferecem,
+                  caracterizados pela qualidade excelente, diversidade e atendimento excepcional.
+                  Descubra como a <strong>Ep Energy se destaca como a opção confiável para soluções energéticas
+                  de primeira linha.</strong>
+                </p>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <label for="sobrenome">Sobrenome:</label>
-                <input type="text" id="sobrenome" name="sobrenome" class="form-control" required>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="empresa">Nome da Empresa:</label>
-            <input type="text" id="empresa" name="empresa" class="form-control" required>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <div class="form-group">
-                <label for="estado">Estado:</label>
-                <select id="estado" name="estado" class="form-control" required>
-                  <option value="SP" selected>São Paulo (SP)</option>
-                  <!-- Outras opções de estado aqui -->
-                </select>
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="form-group">
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" class="form-control" required>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-5">
-              <div class="form-group">
-                <label for="celular">Celular:</label>
-                <input type="tel" id="celular" name="celular" class="form-control" required
-                  placeholder="(xx) xxxxx-xxxx">
-              </div>
-            </div>
-            <div class="col-md-7">
-              <div class="form-group">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" class="form-control" required>
-              </div>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary botao-enviar">Enviar E-mail</button>
-        </form>
-      </div>
-      <div class="contact-info">
-        <h3>Informações de Contato:</h3>
-        <div class="infodanilo">
-          <i class="fas fa-phone fa-2x"></i>
-          <p>+55 (17) 99147-9585</p>
+            <h3 class="tema-video">Video - Produtos e serviços da EP-Energy</h3>
+          </div> <!-- FIM CORPO PRINCIPAL-->
         </div>
+          
 
-        <div class="infodanilo">
-          <i class="fas fa-envelope fa-2x"></i>
-          <p>daniloaraujo@gmail.com</p>
-        </div>
+          <!-- CONTATO -->
+          <div class="container-titulo-contato">
+            <h1>ENTRE EM CONTATO</h1>
+          </div>
+          <div class="containerPrincipal"> 
+            <div class="container-contato">
+              <div class="contact-form">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" class="form-control" required >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" id="sobrenome" name="sobrenome" class="form-control" required >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="empresa">Nome da Empresa:</label>
+                    <input type="text" id="empresa" name="empresa" class="form-control" required >
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="form-group">
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" class="form-control" required>
+                          <option value="SP" selected>São Paulo (SP)</option>
+                          <!-- Outras opções de estado aqui -->
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="form-group">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" id="cidade" name="cidade" class="form-control" required>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5">
+                      <div class="form-group">
+                        <label for="celular">Celular:</label>
+                        <input type="tel" id="celular" name="celular" class="form-control" required placeholder="(xx) xxxxx-xxxx">
+                      </div>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" class="form-control" required >
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary botao-enviar">Enviar E-mail</button>
+                </form>
+              </div>
+              <div class="contact-info">
+                <h3>Informações de Contato:</h3>
+                <div class="infodanilo">
+                  <i class="fas fa-phone fa-2x"></i>
+                  <p>+55 (17) 99147-9585</p>
+                </div>
+                
+                <div class="infodanilo">
+                  <i class="fas fa-envelope fa-2x"></i>
+                  <p>daniloaraujo@gmail.com</p>
+                </div>
 
-        <div class="whatsapp-button">
-          <a href="https://api.whatsapp.com/send?phone=5517991479585" target="_blank">Ir para o WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
+                <div class="whatsapp-button">
+                  <a href="https://api.whatsapp.com/send?phone=5517991479585" target="_blank">Ir para o WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+            
 
+          
 
+              <div class="footer-link">
+                <div class="container-link">
+                  <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link linkFormater" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkFormater" href="contato.html">CONTATO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkFormater" href="#">SOBRE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link linkFormater" href="#">SOLUÇÕES</a>
+                    </li>
+                </ul>
+                </div>
+              </div>
 
+              <footer class="footer">
+                <div class="d-flex align-items-start justify-content-between container">
+                    <img class="logo" src="logo/white_logo_transparent_background.png" alt="Logo da Empresa">  
+                </div>
 
-
-  <div class="footer-link">
-    <div class="container-link">
-      <ul class="nav">
-        <li class="nav-item">
-          <a class="nav-link linkFormater" href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link linkFormater" href="contato.html">CONTATO</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link linkFormater" href="#">SOBRE</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link linkFormater" href="#">SOLUÇÕES</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <footer class="footer">
-    <div class="d-flex align-items-start justify-content-between container">
-      <img class="logo" src="logo/white_logo_transparent_background.png" alt="Logo da Empresa">
-    </div>
-
-    <hr style="margin-top: 10px; width: 80%; margin: 0 auto;">
-    <div class="div-footer-final">
-      <p>&copy; 2023 Company, Inc</p>
-    </div>
-
-  </footer>
-
-
-  <script src="vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="vendor/js/main.js"></script>
-
-
-</body>
-
+                <hr style="margin-top: 10px; width: 80%; margin: 0 auto;">
+                <div class="div-footer-final">
+                  <p>&copy; 2023 Company, Inc</p>
+                </div>
+                
+            </footer>
+  </body>
 </html>
