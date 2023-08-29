@@ -259,7 +259,7 @@ height: 100%;
 
 
 
-/* NOSSAS SOLUCOES PAG PRINCIPAL*/
+/* NOSSAS SOLUCOES LINK*/
 .container-botao-solucoes{
   margin-top: 80px;
   display: flex;
@@ -269,30 +269,24 @@ height: 100%;
 
 }
 .botao-solucoes{
-border: 1px solid rgb(184, 184, 184);
-padding: 10px;
-border-radius: 50px;
-width: 30%;
 text-decoration: none;
 }
 .botao-solucoes h1{
-text-align: center;
+text-align: justify;
 margin: 0 auto;
 color: rgb(184, 184, 184);
 font-weight:normal;
-font-size: 22px;
 }
 .botao-solucoes:hover {
-border: 1px solid rgb(37, 37, 37);
 transition: 1s;
 }
 .botao-solucoes:hover h1 {
-color: rgb(37, 37, 37); /* Aplica a cor diretamente ao h1 ao passar o mouse sobre o botão */
+color: rgb(37, 37, 37); 
 transition: 1s;
 }
 
 .container-texto-soluçoes{
-margin-top: 40px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,30 +295,17 @@ margin-top: 40px;
 font-size: 20px;
 color: rgb(97, 97, 97);
 font-weight: lighter;
-width: 60%;
+width: 100%;
 text-align: center;
 margin-bottom: 30px;
 }
 
 
 /* GALERIA */
-.container-galeria {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  background-color:#ebeff5;
-  margin-top: 20px;
-  width: 100%;
-  height: 600px;
-  margin: 0 auto;
-}
-
 .item {
   position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  height: 100%;
   overflow: hidden;
-  border: 0.5px solid rgba(201, 201, 201, 0.514);
+  border: none;
 }
 
 .item a {
@@ -334,14 +315,8 @@ margin-bottom: 30px;
 .item img {
   width: 100%;
   height: auto;
-  margin-top: -50px;
   object-fit: cover;
   filter: brightness(60%);
-}
-@media (max-width: 1700px) {
-  .item img {
-    margin-top: 0px;
-  }
 }
 
 .item:hover img {
