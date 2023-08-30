@@ -27,47 +27,39 @@
                                       BARRA NAVEGAÇÂO
           ===============================================================================-->
       <header>
-        <nav class="navbar navbar-expand-md" id="navbar-principal" >
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">
-                    <img src="logo/testelogo.png" style="width: 100%; height: 50px;">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon "></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item scrollto active">
-                            <a class="nav-link " href="#home">HOME</a>
-                        </li>
-
-                        <li class="nav-item scrollto">
-                          <a class="nav-link " href="#sobre">SOBRE</a>
-                        </li>
-
-                        <li class="nav-item scrollto">
-                          <a class="nav-link " href="#objetivos">OBJETIVOS</a>
-                        </li>
-
-                        <li class="nav-item scrollto">
-                          <a class="nav-link " href="#saibaMais">SAIBA MAIS</a>
-                        </li>
-
-                        <li class="nav-item scrollto">
-                            <a class="nav-link " href="#contato">CONTATO</a>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NOSSAS SOLUÇÕES</a>
-                            <ul class="dropdown-menu custom-dropdown-menu" id="dropdown-menu">
-                                <li><a class="dropdown-item" href="paineis-quadros.html">QUADROS E PAINEIS</a></li>
-                                <li><a class="dropdown-item" href="#">BLINDADOS</a></li>
-                                <li><a class="dropdown-item" href="#">PAINEIS SOLARES</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+        <nav class="navbar navbar-expand-md" id="navbar-principal">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img src="logo/testelogo.png" style="width: 100%; height: 50px;">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item scrollto active">
+                          <a class="nav-link" href="#home">HOME</a>
+                      </li>
+                      <li class="nav-item scrollto active">
+                        <a class="nav-link" href="#solucoes">NOSSAS SOLUÇOES</a>
+                      </li>
+                      <li class="nav-item scrollto active">
+                        <a class="nav-link" href="#sobre">SOBRE</a>
+                      </li>
+                      <li class="nav-item scrollto active">
+                        <a class="nav-link" href="#objetivos">OBJETIVOS</a>
+                      </li>
+                      <li class="nav-item scrollto active">
+                        <a class="nav-link" href="#saibaMais">SAIBA MAIS</a>
+                      </li>
+                      <li class="nav-item scrollto active">
+                        <a class="nav-link" href="#contato">CONTATO</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
         </nav>
     </header>
 
@@ -90,6 +82,22 @@
               dropdownMenu.classList.remove("dropdown-scrolled");
           }
       });
+
+      document.addEventListener("DOMContentLoaded", function() {
+    // Seleciona todos os links do menu hambúrguer
+    var navLinks = document.querySelectorAll(".navbar-nav a");
+
+    // Adiciona um evento de clique a cada link
+    navLinks.forEach(function(link) {
+        link.addEventListener("click", function() {
+            // Fecha o menu hambúrguer
+            var navbarCollapse = document.getElementById("navbarNav");
+            if (navbarCollapse.classList.contains("show")) {
+                navbarCollapse.classList.remove("show");
+            }
+        });
+    });
+});
     </script>
 
 
@@ -108,60 +116,58 @@
       <!-- ==========================================================================
                                       GALERIA PRODUTOS
       ===============================================================================-->
-      <div class="containerPrincipal"> 
-        <div class="container-botao-solucoes" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-          <a class="botao-solucoes" href="solucoes-transformadores.html">
-            <h1 style=" color: #082f5f;">
-              NOSSAS SOLUÇÕES
-            </h1>
-          </a>
-        </div>
-      
-        <div class="container-texto-soluçoes" data-aos="fade-left" data-aos-delay="100">
-          <p>Descubra as novidades em nossos produtos e serviços para uma experiência de excelência</p>
-        </div>
-      
-        <div class="container-fluid">
-          <div class="row">
-            <!-- GALERIA PRODUTOS -->
-            <div class="container-galeria col-lg-12" data-aos="fade-up" data-aos-duration="1000">
-              <div class="row g-3">
-                <div class="col-md-4 mb-0 item">
-                  <a href="">
-                    <img src="imagens/foto-galeria-1.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="col-md-4 mb-0 item">
-                  <a href="">
-                    <img src="imagens/foto-galeria-2.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="col-md-4 mb-0 item">
-                  <a href="">
-                    <img src="imagens/foto-galeria-3.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="col-md-4 mb-0 item">
-                  <a href="">
-                    <img src="imagens/foto-galeria-4.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-                <div class="col-md-4 mb-0 item">
-                  <a href="">
-                    <img src="imagens/foto-galeria-5.png" alt="" class="img-fluid">
-                  </a>
-                </div> 
-                <div class="col-md-4  mb-0 item">
-                  <a href="">
-                    <img src="imagens/foto-galeria-6.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-              </div>
-            </div>
+      <section id="solucoes">
+        <div class="containerPrincipal"> 
+          <div class="container-botao-solucoes" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+            <a class="botao-solucoes" href="solucoes-transformadores.html" >
+              <h1 style=" color: #082f5f;">
+                NOSSAS SOLUÇÕES
+              </h1>
+            </a>
+          </div>
+        
+          <div class="container-texto-soluçoes" data-aos="fade-left" data-aos-delay="100">
+            <p>Descubra as novidades em nossos produtos e serviços para uma experiência de excelência</p>
+          </div>
+        </div> <!-- FIM CORPO PRINCIPAL-->
+  
+  <div class="container-fluid">
+    <div class="row">
+      <!-- GALERIA PRODUTOS -->
+      <div class="container-galeria col-lg-12" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-md-3 mb-0 item">
+            <a href="">
+              <img src="imagens/foto-galeria-1.png" alt="" class="img-fluid">
+            </a>
+            <h2 class="text-center"><a href="">QUADROS E PAINÈIS</a></h2>
+          </div>
+          <div class="col-md-3 mb-0 item">
+            <a href="">
+              <img src="imagens/foto-galeria-2.png" alt="" class="img-fluid">
+            </a>
+            <h2 class="text-center"><a href="">BARRAMENTOS </a></h2>
+          </div>
+          <div class="col-md-3 mb-0 item">
+            <a href="">
+              <img src="imagens/foto-galeria-3.png" alt="" class="img-fluid">
+            </a>
+            <h2 class="text-center"><a href="">EQUIPAMENTOS</a></h2>
+          </div>
+          <div class="col-md-3 mb-0 item">
+            <a href="">
+              <img src="imagens/foto-galeria-4.png" alt="" class="img-fluid">
+            </a>
+            <h2 class="text-center"><a href="">SKID</a></h2>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+      </section>
+      
           
-      </div> <!-- FIM CORPO PRINCIPAL-->
+      
 
 
 
@@ -324,7 +330,7 @@
           <!-- ==========================================================================
                                       CONTATO 
           ===============================================================================-->
-          <div class="container-titulo-contato" data-aos="fade-down">
+          <div class="container-titulo-contato" data-aos="fade-down" id="contato">
             <h1>ENTRE EM CONTATO</h1>
           </div>
           <div class="container mt-5" data-aos="fade-up">
@@ -350,8 +356,33 @@
                       <div class="col-md-5">
                         <label for="estado" class="form-label">Estado:</label>
                         <select class="form-select" id="estado" required>
+                          <option value="AC">Acre (AC)</option>
+                          <option value="AL">Alagoas (AL)</option>
+                          <option value="AP">Amapá (AP)</option>
+                          <option value="AM">Amazonas (AM)</option>
+                          <option value="BA">Bahia (BA)</option>
+                          <option value="CE">Ceará (CE)</option>
+                          <option value="DF">Distrito Federal (DF)</option>
+                          <option value="ES">Espírito Santo (ES)</option>
+                          <option value="GO">Goiás (GO)</option>
+                          <option value="MA">Maranhão (MA)</option>
+                          <option value="MT">Mato Grosso (MT)</option>
+                          <option value="MS">Mato Grosso do Sul (MS)</option>
+                          <option value="MG">Minas Gerais (MG)</option>
+                          <option value="PA">Pará (PA)</option>
+                          <option value="PB">Paraíba (PB)</option>
+                          <option value="PR">Paraná (PR)</option>
+                          <option value="PE">Pernambuco (PE)</option>
+                          <option value="PI">Piauí (PI)</option>
+                          <option value="RJ">Rio de Janeiro (RJ)</option>
+                          <option value="RN">Rio Grande do Norte (RN)</option>
+                          <option value="RS">Rio Grande do Sul (RS)</option>
+                          <option value="RO">Rondônia (RO)</option>
+                          <option value="RR">Roraima (RR)</option>
+                          <option value="SC">Santa Catarina (SC)</option>
                           <option value="SP" selected>São Paulo (SP)</option>
-                          <!-- ... Outras opções de estado ... -->
+                          <option value="SE">Sergipe (SE)</option>
+                          <option value="TO">Tocantins (TO)</option>
                         </select>
                       </div>
                       <div class="col-md-7">

@@ -2,15 +2,15 @@
 
 
 /* MENU NAVEGAÇÃO*/
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   background-color: transparent;
-  z-index: 1000; /* Para garantir que a navbar esteja acima do conteúdo */
+  z-index: 1000;
   height: 60px;
-  
+  transition: background-color 0.5s ease; /* Adicione a transição para a mudança de cor */
 }
 
 .container-fluid{
@@ -21,6 +21,27 @@
   .container-fluid {
       width: 80%;
       margin: 0auto;
+  }
+}
+
+/* Estilo para o menu suspenso personalizado na versão responsiva */
+@media screen and (max-width: 767px) {
+  .navbar-collapse {
+    background-color: rgb(10, 22, 37);
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+  .navbar-nav li {
+    text-align: center;
+    margin: 5px 0;
+  }
+  .navbar-toggler {
+    color: white;
+  }
+  /* Adicione a mudança de cor de fundo para a versão responsiva */
+  .navbar.scrolled {
+    background-color: rgb(10, 22, 37);
   }
 }
 
@@ -161,6 +182,7 @@ margin-bottom: 30px;
   height: auto;
   object-fit: cover;
   filter: brightness(60%);
+  border-radius: 5px;
 }
 
 .item:hover img {
@@ -177,7 +199,21 @@ margin-bottom: 30px;
   filter: brightness(100%);
 }
 
+/* Estilização dos h2 que são links */
+.item h2 {
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Adiciona um espaçamento superior */
+}
 
+.item h2 a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: #494949; /* Cor do texto */
+}
+
+/* Quando o link está sendo passado com o mouse */
+.item h2 a:hover {
+  color: #192e5a; /* Cor do texto ao passar o mouse */
+}
 
 
 
@@ -280,7 +316,7 @@ margin-bottom: 30px;
 
 .container-subtitulo h2 {
   text-align: center;
-  color: rgb(240, 183, 29);
+  color: #85BC06;
   margin: 0;
 }
 
