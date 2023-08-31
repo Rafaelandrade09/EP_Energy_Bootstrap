@@ -178,7 +178,7 @@ margin-bottom: 30px;
 }
 
 .item img {
-  width: 100%;
+  width: 85%;
   height: auto;
   object-fit: cover;
   filter: brightness(60%);
@@ -186,7 +186,7 @@ margin-bottom: 30px;
 }
 
 .item:hover img {
-  transform: scale(1.1);
+  transform: scale(1.);
 }
 
 .container-galeria:hover .item img {
@@ -203,6 +203,7 @@ margin-bottom: 30px;
 .item h2 {
   text-align: center; /* Centraliza o texto */
   margin-top: 20px; /* Adiciona um espaçamento superior */
+  width: 85%;
 }
 
 .item h2 a {
