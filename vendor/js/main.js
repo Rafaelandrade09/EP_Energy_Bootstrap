@@ -107,6 +107,24 @@
       window.addEventListener('load', toggleBacktotop)
       onscroll(document, toggleBacktotop)
     }
+
+
+    /**
+     * Back to top button whats
+     */
+    let backtotopWhats = select('.back-to-top-whats')
+    if (backtotopWhats) {
+      const toggleBacktotopWhats = () => {
+        if (window.scrollY > 100) {
+          backtotopWhats.classList.add('active')
+        } else {
+          backtotopWhats.classList.remove('active')
+        }
+      }
+      window.addEventListener('load', toggleBacktotopWhats)
+      onscroll(document, toggleBacktotopWhats)
+    }
+
   
     /**
      * Mobile nav toggle
