@@ -56,7 +56,7 @@
 .custom-dropdown-menu a.dropdown-item {
   color: #cecccc; /* Cor do texto no hover */
   
-  font-size: 12px;
+  font-size: 16px;
   font-family: "Montserrat-Regular";
 }
 
@@ -89,7 +89,7 @@
   padding: 0px;
   margin-left: 7px;
   font-family: "Montserrat-Regular";
-  font-size: 15px;
+  font-size: 16px;
   margin-right: 60px;
   
 }
